@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="87377698a8dca305b9579a13060142f2" category="doc">Créer des volumes FlexGroup</block>
+  <block id="14b044746cb87538e696ebd7cef86e8f" category="paragraph">Si vous gérez un cluster avec un connecteur, vous pouvez désormais créer des volumes FlexGroup à l'aide de l'API BlueXP .</block>
+  <block id="ca513b668252beaae65808764fc2388f" category="inline-link">Apprenez à créer un volume FlexGroup</block>
+  <block id="dfc9f0f0920c102b079fd1c513fccdde" category="list-text"><block ref="dfc9f0f0920c102b079fd1c513fccdde" category="inline-link-rx"></block></block>
+  <block id="bbcffd6476036994102e5ec1c5571f64" category="inline-link">Découvrez ce qu'est un volume FlexGroup</block>
+  <block id="a33a2b4a40f0a01a71b97f709ac14074" category="list-text"><block ref="a33a2b4a40f0a01a71b97f709ac14074" category="inline-link-rx"></block></block>
+  <block id="2d177a5ce778fe0e6f460ac5e9449f84" category="doc">Les modèles de volume ne sont plus pris en charge</block>
+  <block id="14b1c6bd63866971a4cd695c3c2a3d80" category="paragraph">Vous ne pouvez plus créer un volume à partir d'un modèle.  Cette action était associée au service de correction BlueXP , qui n'est plus disponible.</block>
+  <block id="1e095c69621645fccc8f12cd7f35f6fc" category="doc">Prise en charge des systèmes ASA r2</block>
+  <block id="0c02bcea354671c5372f06a37c547a7d" category="paragraph">Vous pouvez désormais découvrir les systèmes NetApp ASA r2 dans BlueXP lorsque vous utilisez BlueXP en mode standard ou en mode restreint.  Après avoir découvert un système NetApp ASA r2 et ouvert l'environnement de travail, vous êtes directement redirigé vers le Gestionnaire système.</block>
+  <block id="d5861f4539296095cd7c9fdfd0c5a2c9" category="paragraph">Aucune autre option de gestion n'est disponible avec les systèmes ASA r2.  Vous ne pouvez pas utiliser la vue standard et vous ne pouvez pas activer les services BlueXP .</block>
+  <block id="f2fba5567ec0d8ae5addf04c960ba6d0" category="paragraph">La découverte des systèmes ASA r2 n'est pas prise en charge lors de l'utilisation de BlueXP en mode privé.</block>
+  <block id="989977a18a476a92018e04dd60ec37c1" category="inline-link">En savoir plus sur les systèmes ASA r2</block>
+  <block id="a7c7539e11570decc041c60258667032" category="list-text"><block ref="a7c7539e11570decc041c60258667032" category="inline-link-rx"></block></block>
+  <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link">En savoir plus sur les modes de déploiement de BlueXP</block>
+  <block id="1fbeb219941cbb548a79e88d779ddaeb" category="list-text"><block ref="1fbeb219941cbb548a79e88d779ddaeb" category="inline-link-rx"></block></block>
+  <block id="613fbbb3f2dbf238c8527a537252e8ed" category="doc">Prise en charge des systèmes ASA r2 avec mode privé</block>
+  <block id="0d9e2244b8fb5d13651efe34b9723803" category="paragraph">Vous pouvez désormais découvrir les systèmes NetApp ASA r2 lorsque vous utilisez BlueXP en mode privé.  Ce support est disponible à partir de la version 3.9.46 du mode privé de BlueXP.</block>
+  <block id="1da5a40083bd16c3443e7eda42875506" category="doc">Rôle d'accès BlueXP requis</block>
+  <block id="c86bd67be80794fcaa3f1d91aa8b2899" category="inline-link-macro">En savoir plus sur les rôles d’accès.</block>
+  <block id="c33f8c65624465d916ec23f462428c02" category="paragraph">Vous avez désormais besoin de l’un des rôles d’accès suivants pour afficher, découvrir ou gérer les clusters ONTAP sur site : administrateur d’organisation, administrateur de dossier ou de projet, administrateur de stockage ou spécialiste de l’intégrité du système. <block ref="77eb7cc86be774e9cb4fdfac100bd232" category="inline-link-macro-rx"></block></block>
+  <block id="bc2fe31b1e2682a9a79513d792e9c721" category="doc">BlueXP est désormais NetApp Console</block>
+  <block id="995c8f79a8e07fbd8d519e45d03d6004" category="paragraph">La NetApp Console, construite sur la base BlueXP améliorée et restructurée, fournit une gestion centralisée du stockage NetApp et des NetApp Data Services dans les environnements sur site et cloud à l'échelle de l'entreprise, offrant des informations en temps réel, des flux de travail plus rapides et une administration simplifiée, hautement sécurisée et conforme.</block>
+  <block id="2ef9d641d45afe99b74ad6f9a9f797ad" category="inline-link-macro">Notes de version de la NetApp Console</block>
+  <block id="800c173937521899b70a4ab5d735d3d7" category="paragraph">Pour plus de détails sur ce qui a changé, consultez le<block ref="b78e17cf58c4e309929c8d6a69594c7d" category="inline-link-macro-rx"></block> .</block>
+  <block id="8f091d30f3f7b297ff75d0037ea8d7bf" category="summary">Digital Advisor vous permet d'optimiser les opérations, la sécurité et les performances de vos clusters ONTAP .</block>
+  <block id="767f8e46413ca208f7f2fbdc36377c43" category="doc">Optimiser les clusters à l'aide de NetApp Digital Advisor</block>
+  <block id="784fa467296efc0294ee0be27082dc4d" category="paragraph">NetApp Digital Advisor vous permet d'optimiser les opérations, la sécurité et les performances de vos clusters ONTAP .</block>
+  <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">Caractéristiques</block>
+  <block id="346661910d62d25c1475a0a09bd7a473" category="paragraph">Vous pouvez afficher l'état général de votre système de stockage, des informations de haut niveau sur le bien-être du système, l'inventaire, la planification, les mises à niveau et des informations précieuses au niveau de la liste de surveillance à l'aide de Digital Advisor.</block>
+  <block id="cd5d4df84a7902a777304de9ff13e8a8" category="list-text">Analysez et optimisez la santé de vos systèmes de stockage</block>
+  <block id="9d4e486fd4968dd03a1921222e688c12" category="list-text">Obtenez des informations sur tous les risques pesant sur vos systèmes de stockage et les actions à entreprendre pour atténuer ces risques</block>
+  <block id="4c8438807538fa50db0d24cda516c562" category="list-text">Analysez les performances de vos périphériques de stockage en visualisant le format graphique des données de performances</block>
+  <block id="63a792f0efaeee81d9e7f3ba251637c2" category="list-text">Obtenez des détails sur les systèmes qui ont dépassé 90 % de leur capacité ou qui approchent de 90 % de leur capacité</block>
+  <block id="25bab72d979d2f781310fbd8a7510d1e" category="list-text">Obtenez des informations sur le matériel et les logiciels qui ont expiré ou sont sur le point d'expirer dans les 6 prochains mois</block>
+  <block id="c0b44a835cfaa8886063c96fb9342411" category="list-text">Mettez à niveau votre logiciel de système de stockage et mettez à jour votre micrologiciel ONTAP à l'aide d'Ansible</block>
+  <block id="696fbf3ecd0e89c737f9c5b7adddfb8e" category="section-title">Systèmes ONTAP pris en charge</block>
+  <block id="506bd7eab061c4dfb862025b64c70f67" category="paragraph">Digital Advisor fournit des informations sur tous les systèmes ONTAP sur site et les systèmes Cloud Volumes ONTAP associés à votre compte NetApp Support Site (NSS).</block>
+  <block id="ab066b3292d8ab61ef3b5c77169cdd19" category="section-title">Plus d'informations</block>
+  <block id="ea7b2437ddd14dce6ba3f65494d634fd" category="inline-link">Documentation du Digital Advisor</block>
+  <block id="f38c64bbd8ec17fdea3c3b931a5333c6" category="paragraph"><block ref="f38c64bbd8ec17fdea3c3b931a5333c6" category="inline-link-rx"></block></block>
+  <block id="9be2e2782724eee71ac661baa093339d" category="summary">Vous pouvez gérer les clusters ONTAP exécutés sur les contrôleurs AFF/ FAS et ONTAP Select à partir de la NetApp Console.  L'ajout de systèmes ONTAP sur site à la NetApp Console vous permet de gérer tous vos actifs de stockage et de données à partir d'une seule interface.</block>
+  <block id="efd8b4aecde4d837ab44ddaf52e7657d" category="doc">En savoir plus sur la gestion des clusters ONTAP sur site dans la NetApp Console</block>
+  <block id="f79dd7235ac6a15f707932f36bda08ef" category="paragraph">Vous pouvez gérer les clusters ONTAP exécutés sur les contrôleurs AFF/ FAS et ONTAP Select à partir de la NetApp Console.  L'ajout de systèmes ONTAP sur site à la console vous permet de gérer de manière centralisée tous vos actifs de stockage et de données.</block>
+  <block id="3c031b939f6ec312ee601d021e7a6644" category="section-title">NetApp Console</block>
+  <block id="0a0979a6d279475a420ea5c279943daa" category="paragraph">La NetApp Console fournit une gestion centralisée des services de stockage et de données NetApp dans les environnements sur site et cloud à l'échelle de l'entreprise. La console est requise pour accéder aux services de données NetApp et les utiliser. En tant qu'interface de gestion, il vous permet de gérer de nombreuses ressources de stockage à partir d'une seule interface. Les administrateurs de console peuvent contrôler l’accès au stockage et aux services pour tous les systèmes de l’entreprise.</block>
+  <block id="7118a6b22768dabe4720d84710ea1e43" category="paragraph">Vous n'avez pas besoin de licence ni d'abonnement pour commencer à utiliser NetApp Console et vous n'encourez des frais que lorsque vous devez déployer des agents de console dans votre cloud pour garantir la connectivité à vos systèmes de stockage ou à vos services de données NetApp . Cependant, certains services de données NetApp accessibles depuis la console sont sous licence ou basés sur un abonnement.</block>
+  <block id="1a90436cad6b2c834a6f0bf4b63bb676" category="paragraph">En savoir plus sur le<block ref="185be9890bef04443cd0fba90b4aff11" category="inline-link-rx"></block> .</block>
+  <block id="fb24315d532abea28c978f8643868013" category="list-text">Gérer les volumes NFS et CIFS</block>
+  <block id="adb56ad9cd1545569d057a0870829609" category="list-text">Accédez à ONTAP System Manager pour tout cluster géré via la console</block>
+  <block id="149beeefe15ab521c1672c4e84d98080" category="list-text">Obtenez une observabilité de la santé et des performances grâce à l'analyse et au contrôle</block>
+  <block id="6c8bfbe0372128cde27631bc56cfcf04" category="list-text">Utilisez les services de données pour répliquer, sauvegarder, analyser, classer et hiérarchiser les données</block>
+  <block id="e6330d5106c771279d9ad23928f958fb" category="list-text">Afficher les informations sur l'état des contrats matériels et logiciels dans la console</block>
+  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">Coût</block>
+  <block id="4021c0d07bda2ea80ded248828507d76" category="paragraph">Un coût peut être associé, mais il dépend des éléments suivants :</block>
+  <block id="57680964089872f9d337e05bf8bfb358" category="list-text">Où vous déployez un agent de console pour découvrir et gérer vos clusters.</block>
+  <block id="e56122aac65ec47b6ddcc405622fcf5b" category="paragraph">Vous pouvez installer un agent de console dans le cloud ou dans vos locaux.  L’installation d’un agent de console dans le cloud entraîne des coûts.</block>
+  <block id="f2c1c0f041fc340f7b70252f040e3924" category="list-text">Que vous utilisiez des services de données NetApp tels que NetApp Backup and Recovery, NetApp Ransomware Resilience, etc.</block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="summary"></block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Mentions légales</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">Les mentions légales donnent accès aux déclarations de droits d'auteur, aux marques déposées, aux brevets et bien plus encore.</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Copyright</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">Marques de commerce</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NETAPP, le logo NETAPP et les marques répertoriées sur la page Marques NetApp sont des marques commerciales de NetApp, Inc. Les autres noms de sociétés et de produits peuvent être des marques commerciales de leurs propriétaires respectifs.</block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">Brevets</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">Une liste actuelle des brevets détenus par NetApp est disponible à l'adresse suivante :</block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">Politique de confidentialité</block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Open source</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">Les fichiers d'avis fournissent des informations sur les droits d'auteur et les licences tiers utilisés dans les logiciels NetApp .</block>
+  <block id="4fd101b562f1e5e8d87ff8710122a42f" category="inline-link">Avis concernant la NetApp Console</block>
+  <block id="665acc6d2ee48d5efd698763b6fbf735" category="paragraph"><block ref="665acc6d2ee48d5efd698763b6fbf735" category="inline-link-rx"></block></block>
+  <block id="1eba71d64e6c5e410e558530711e835b" category="summary">Les limitations connues identifient les plates-formes, les appareils ou les fonctions qui ne sont pas pris en charge par cette version du produit ou qui n'interagissent pas correctement avec elle. Examinez attentivement ces limitations.</block>
+  <block id="7b021d8490de77d09ad0aabce1db0694" category="doc">Limitations connues de la gestion des clusters ONTAP sur site dans la NetApp Console</block>
+  <block id="835e40a074ba47935e3e68e3452eb52f" category="section-title">Limitations liées aux systèmes ASA r2</block>
+  <block id="d7e2ff6c1b6b7d25b9f3596567029677" category="paragraph">Après avoir découvert un système NetApp ASA r2, vous êtes dirigé vers le Gestionnaire système.</block>
+  <block id="07e9fa47446b3dea7b31d268b8760d64" category="paragraph">Aucune autre option de gestion n'est disponible avec les systèmes ASA r2.  Vous ne pouvez pas utiliser la vue standard et vous ne pouvez pas activer les services de données NetApp .</block>
+  <block id="51f9789c1f459351ccbb34c7b6043a74" category="section-title">Clusters non pris en charge</block>
+  <block id="d914c3ca19e356b58a16e8c87724687e" category="paragraph">Les clusters ONTAP sur site configurés avec l’authentification SAML ne sont pas pris en charge avec la console.</block>
+  <block id="3b4a393ec2775335fff67bde36ea1a2c" category="section-title">Limitations du gestionnaire de système</block>
+  <block id="c48fa27882b16b947546d090d526b250" category="paragraph">Les fonctionnalités suivantes du Gestionnaire système ne sont pas prises en charge à partir de la console :</block>
+  <block id="e710f9addfdf1e48c1320d497696c4fc" category="list-text">Configuration du cluster</block>
+  <block id="7c42f36290d675f4df34ac5b9a187686" category="paragraph">Après avoir défini l’adresse IP de gestion et configuré le mot de passe administrateur sur un cluster ONTAP local, vous pouvez découvrir le cluster dans la console.</block>
+  <block id="ee74e57c3f99de5bd2475a3fe235ef15" category="list-text">Contrôle d'accès basé sur les rôles (agent de console uniquement)</block>
+  <block id="5c782b002503290f00acf76f2db6e2fc" category="paragraph">Le contrôle d’accès basé sur les rôles du Gestionnaire système n’est pas pris en charge lors de la découverte et de la gestion d’un cluster ONTAP sur site à l’aide d’un agent de console.  Vous êtes invité à saisir vos informations d’identification d’administrateur pendant le processus de découverte.  Ces informations d’identification sont utilisées pour toutes les actions effectuées à partir du Gestionnaire système.</block>
+  <block id="0f91ddbe2a031c0bffbbaf61ec855f75" category="paragraph">Avec l'option de découverte directe, vous êtes invité à vous connecter avec vos informations d'identification ONTAP chaque fois que vous ouvrez le système dans la console.</block>
+  <block id="7786dc709b32a1c2b29500a444f79e9a" category="list-text">Activation de NetApp Backup and Recovery</block>
+  <block id="48bf063e534e95acdf29f80c45924be0" category="paragraph">La version du cluster doit être 9.13.1 pour activer la sauvegarde et la récupération à partir du Gestionnaire système.</block>
+  <block id="7d782479a41a3941b57cc7c2b60d318a" category="inline-link">Apprenez comment démarrer</block>
+  <block id="4e9d48b6b56c65fb46ddd5e6460277e9" category="paragraph">Si vous n'avez pas découvert de cluster à l'aide d'un agent de console, vous ne pouvez pas utiliser le Gestionnaire système (vue avancée) pour activer la sauvegarde et la récupération.  Cependant, vous pouvez activer la sauvegarde et la récupération sur un cluster local directement depuis la console.<block ref="e3bdf105d163a62b1d83e3f92f872319" category="inline-link-rx"></block></block>
+  <block id="dc7f30ec5bd878efd2189fe1b0703118" category="list-text">Mises à niveau à la demande</block>
+  <block id="9eb06491d0dc3d6fae682e802616dce9" category="paragraph">Les mises à niveau à la demande du micrologiciel et du logiciel ne sont pas disponibles si la version du cluster est ONTAP 9.9.1 ou une version antérieure.</block>
+  <block id="face24e32703b96941a0a9f58cab36d4" category="paragraph">Si vous ne disposez pas d'un agent de console, vous ne pouvez pas effectuer de mises à jour à partir de votre machine locale, mais uniquement à partir d'un serveur accessible via la console.</block>
+  <block id="cff5bc039637fff679fead59b27d79c4" category="list-text">Recherche globale</block>
+  <block id="382f24d48bc1efa5dd974e166ac8df58" category="list-text">Paramètres de l'interface utilisateur</block>
+  <block id="969c8dcbcecafedce576ae70c4a3c692" category="summary">Découvrez les clusters ONTAP sur site à partir de la NetApp Console afin de pouvoir commencer à gérer les volumes et à effectuer une gestion avancée à l'aide d' ONTAP System Manager, disponible à partir de la console.</block>
+  <block id="d1b29fc7b35be872f620d5d931e8766c" category="doc">Découvrez les clusters ONTAP sur site dans la NetApp Console</block>
+  <block id="1730b42e5b59042dfdc6f3d1a901abe8" category="paragraph">Découvrez les clusters ONTAP sur site à partir de la NetApp Console afin de pouvoir commencer à gérer les volumes et à effectuer une gestion avancée à l'aide d' ONTAP System Manager, directement à partir de la console.</block>
+  <block id="087c69ac86f405646aaecdc0b84eba8d" category="paragraph-title">Rôle de console requis :</block>
+  <block id="dbbc09735940a2a21109b74dc600b92b" category="inline-link-macro">En savoir plus sur les rôles d’accès à la NetApp Console .</block>
+  <block id="0b1b216f94a80b2e5f3b3d7a4cad23c5" category="paragraph">Administrateur de stockage ou spécialiste de la santé du système.<block ref="f934f8c47ee938050655a3fea2497dd8" category="inline-link-macro-rx"></block></block>
+  <block id="d3d762abdaccb1dfe422eda709146098" category="section-title">Étape 1 : Examiner les options de découverte et de gestion</block>
+  <block id="ae75b75301ec9eda499a56de00351e72" category="paragraph">Vous pouvez ajouter des clusters ONTAP locaux à la console de deux manières.  La méthode à choisir dépend du fait que vous ayez ou non un agent de console installé dans votre organisation :</block>
+  <block id="b2a374ced122f79938316510ffaddc25" category="list-text">Découverte et gestion à l'aide d'un agent de console</block>
+  <block id="a3736487d08fb63c22adeaf7035f0bca" category="list-text">Cette option vous permet de gérer les clusters exécutant ONTAP 8.3 et versions ultérieures à l'aide des fonctionnalités suivantes :</block>
+  <block id="cd003ebb69eeea87816020f61834620c" category="list-text">Fournit des opérations de volume de base de manière native via la NetApp Console</block>
+  <block id="0b5d7397550ec392177f9f574abdf9c2" category="list-text">ONTAP System Manager (pris en charge avec ONTAP 9.10.0 et versions ultérieures), accédez au System Manager pour chaque cluster respectif directement depuis la console</block>
+  <block id="a1471a8ede662ca724fd280a1005d7f9" category="list-text">Intégration avec les services de données NetApp qui fournissent la réplication des données, la sauvegarde et la récupération, la classification des données et la hiérarchisation du cloud</block>
+  <block id="d4a6e71a69daabc670296b6e5d940bcf" category="inline-link">Contactez l'administrateur de votre organisation.</block>
+  <block id="2e85119401bde157dbfaceb326ffc24e" category="list-text">Vous devez disposer du rôle d’administrateur d’organisation pour installer un agent de console.  Contactez votre administrateur de console si vous avez des questions.<block ref="23553e4bd18aac58793088224d68bd3d" category="inline-link-rx"></block></block>
+  <block id="ed2669e12a2aca1d23d0391fe9aa4d4f" category="list-text">Découverte et gestion directes</block>
+  <block id="35a995f567662305fca4eed3895deb78" category="list-text">Cette option vous permet de gérer les clusters exécutant ONTAP 9.12.1 et versions ultérieures à l'aide du Gestionnaire système.  Aucune autre option de gestion n'est disponible.  Vous ne pouvez pas utiliser la vue standard et vous ne pouvez pas activer les services de données NetApp .</block>
+  <block id="aa6c67316f44ea02c19cc637b2c2ef63" category="paragraph">Cette option ne nécessite pas d'agent de console.</block>
+  <block id="e04b8c0ecfdcffe032cc01cf84214437" category="paragraph">Lorsque vous accédez au Gestionnaire système sur un cluster ONTAP local exécutant 9.12.1 ou une version ultérieure avec une connectivité à la console, vous serez invité à gérer le cluster directement depuis la console.  Si vous suivez cette invite, le cluster est découvert dans la console à l’aide de l’option de découverte directe.</block>
+  <block id="63e4fa81df4f8716cfcd36c8cd6e6d22" category="paragraph">Une fois découverts, vos clusters sont disponibles sur la page *Systèmes* de la console.</block>
+  <block id="87b2f736c3f72f1fe06a64c91dbe3f5e" category="paragraph">Si vous décidez d'ajouter un agent de console à votre NetApp Console, vous devez rajouter votre cluster sur site à partir de la page *Systèmes non découverts*.  Cela permet une gestion native depuis la console et l'accès aux services de données NetApp .  Vous devez ensuite supprimer l’autre système.</block>
+  <block id="663060c661d21dbe1c32242cc8731f0e" category="section-title">Étape 2 : Configurez votre environnement</block>
+  <block id="3eb7e8933c13ab4b897e0a64baedf0fc" category="paragraph">Avant de découvrir vos clusters ONTAP sur site, assurez-vous d’avoir satisfait aux exigences suivantes.</block>
+  <block id="a1a264e616e24563d4b8f8b5795ea403" category="list-text">Exigences générales</block>
+  <block id="7d0b01345a5038f25fdd17dc04d8872e" category="list-text">Vous avez besoin de l’adresse IP de gestion du cluster et du mot de passe du compte utilisateur administrateur.</block>
+  <block id="f1dc34ed21a60c010809ad3f51a48991" category="list-text">La console découvre les clusters ONTAP à l'aide de HTTPS.  Si vous utilisez des stratégies de pare-feu personnalisées, le cluster ONTAP doit autoriser l’accès HTTPS entrant via le port 443.</block>
+  <block id="c14049c05a3e44d0e3fae4bfd918619f" category="paragraph">La stratégie de pare-feu « mgmt » par défaut autorise l'accès HTTPS entrant à partir de toutes les adresses IP.  Si modifié, assurez-vous que le protocole HTTPS est activé pour l'hôte de l'agent.</block>
+  <block id="e82f46590519b9334e39aabe565ff654" category="list-text">Pour découvrir un système avec un agent de console</block>
+  <block id="8ab7236e714d67d0d2cdb0f6c0c6bdea" category="list-text">Le cluster sur site doit exécuter ONTAP 8.3 ou une version ultérieure.</block>
+  <block id="98a48922296ab16b4da9f0a6ddd0c403" category="list-text">Vous devez disposer d’un agent de console installé chez un fournisseur de cloud ou dans vos locaux.</block>
+  <block id="170449681ba6744c89ff5e9d6f3adc86" category="paragraph">Pour hiérarchiser les données froides vers le cloud, examinez les exigences de l'agent pour votre environnement cible.</block>
+  <block id="91e534d044a3d9c6a1c8575f89e73c9b" category="inline-link">En savoir plus sur les agents de console</block>
+  <block id="299091a5cbcad3c418786b0de4d0c3b0" category="list-text"><block ref="299091a5cbcad3c418786b0de4d0c3b0" category="inline-link-rx"></block></block>
+  <block id="096686bce670ae5bcba683b41a15fa90" category="inline-link">Apprenez à basculer entre plusieurs agents</block>
+  <block id="de4fbbe08ea86732dd8f806479644bdd" category="list-text"><block ref="de4fbbe08ea86732dd8f806479644bdd" category="inline-link-rx"></block></block>
+  <block id="3b50aa74e0572012073a00299390197e" category="inline-link">En savoir plus sur NetApp Cloud Tiering</block>
+  <block id="096f3dec18cbaace57ae0aed5243222a" category="list-text"><block ref="096f3dec18cbaace57ae0aed5243222a" category="inline-link-rx"></block></block>
+  <block id="5caa875315778ebb3bef681af57a0582" category="list-text">L'hôte de l'agent doit autoriser les connexions sortantes via le port 443 (HTTPS) et le cluster ONTAP doit autoriser l'accès HTTP entrant via le port 443 vers le LIF de gestion du cluster.</block>
+  <block id="58ff78936b6d73707a74f4aca22c20be" category="paragraph">Si l'agent est dans le cloud, le groupe de sécurité prédéfini autorise toutes les communications sortantes.</block>
+  <block id="be8c0cb1018ac37d4931901b25f4d7b8" category="list-text">Conditions requises pour la découverte directe</block>
+  <block id="971b56bb19698ede33f8f4ef782f3774" category="list-text">Le cluster sur site doit exécuter ONTAP 9.12.1 ou une version ultérieure.</block>
+  <block id="b1268d5945309a2b623dbac8ed28bc83" category="list-text">Le cluster doit disposer d'une connectivité entrante et sortante au service de NetApp Console :</block>
+  <block id="3693065b074c131d0dd4c103327a1d7b" category="paragraph">\ https://cloudmanager.cloud.netapp.com/ontap-service/check-service-connection</block>
+  <block id="933d8167f78326f447f349f9de4ec3e0" category="list-text">L'ordinateur que vous utilisez pour accéder à la console doit disposer d'une connexion réseau au cluster ONTAP local, de la même manière que vous fourniriez des connexions à d'autres ressources de votre réseau privé.</block>
+  <block id="f06497cae9ab6e78fd37893cdca029bd" category="section-title">Étape 3 : Découvrir un cluster</block>
+  <block id="8296ca45bb7cfe0620a93ad852c01e35" category="paragraph">Découvrez vos clusters ONTAP sur site à partir de la console de deux manières :</block>
+  <block id="2e5085fdc5b66595ab2026e38c938367" category="list-text">Dans *Stockage &gt; Gestion &gt; Systèmes*, sélectionnez *Ajouter +* et ajoutez manuellement les détails sur le cluster ONTAP local.</block>
+  <block id="dba7205afc7b2cf67d79ecc081c7b835" category="list-text">Dans *Stockage &gt; Gestion &gt; Systèmes détectables*, sélectionnez un cluster que la console a pré-détecté en fonction des clusters ONTAP associés à l'adresse e-mail de votre connexion à la NetApp Console .</block>
+  <block id="435159e696cefb3c80615ee1022a13b4" category="paragraph">Lorsque vous démarrez le processus de découverte, la console découvre un cluster comme suit :</block>
+  <block id="0cf68afd6fcf0f4c0e3a949071596993" category="list-text">Si vous disposez d’un agent de console doté d’une connexion à un cluster ONTAP , la console utilise cet agent pour découvrir et gérer le cluster.</block>
+  <block id="7a166f4df60b8338eed8bc558eb640f0" category="list-text">Si vous n’avez pas d’agent de console ou si votre agent n’a pas de connexion au cluster ONTAP , la console utilise automatiquement l’option de découverte et de gestion directes.</block>
+  <block id="c77ba8df974ac9ac198176dcff4f8f52" category="open-title">Découvrir un cluster manuellement</block>
+  <block id="93cbb61b2565b6dbf0515c41d562ae14" category="paragraph">Découvrez un cluster ONTAP sur site dans la console en saisissant l’adresse IP de gestion du cluster et le mot de passe du compte d’utilisateur administrateur.</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Étapes</block>
+  <block id="c27deb5ada399336a287848889d2032c" category="list-text">Dans le menu de navigation, sélectionnez *Stockage &gt; Gestion*.</block>
+  <block id="b13f80bab35d0e5b24adc2f1065c5fdf" category="list-text">Sur la page *Systèmes*, sélectionnez *Ajouter +*.</block>
+  <block id="57a68d192721201de4e91a2f05ce058b" category="list-text">Sélectionnez *Sur site*.</block>
+  <block id="2901a10a7b1d7a91ad19913b88e371a6" category="list-text">À côté de On-Premises ONTAP, sélectionnez *Découvrir*.</block>
+  <block id="1de006c684d29369fa4392137f9a3894" category="list-text">Sur la page _Discover_, entrez l’adresse IP de gestion du cluster et le mot de passe du compte utilisateur administrateur.</block>
+  <block id="b9c1f4eb5bf92f6b86d5028551817828" category="list-text">Si vous découvrez le cluster directement (sans agent de console), sélectionnez *Enregistrer les informations d'identification*.</block>
+  <block id="485163f9cb024aaf7afa931910bacb59" category="paragraph">Si vous sélectionnez cette option, vous n’aurez pas besoin de ressaisir les informations d’identification à chaque fois que vous accédez au système depuis la console.  Ces informations d’identification sont associées à votre propre connexion utilisateur à la NetApp Console .  Ils ne sont pas enregistrés pour être utilisés par quelqu'un d'autre dans l'organisation de la NetApp Console .</block>
+  <block id="6717014f0e48b7ab08c9846925b42c93" category="list-text">Sélectionnez *Découvrir*.</block>
+  <block id="0af90a54ff3386d3c7f24ab678bc3945" category="paragraph">Si vous n’avez pas d’agent de console et que l’adresse IP n’est pas accessible depuis la console, vous serez invité à créer un agent de console.  Contactez votre administrateur de console pour créer un agent de console si vous n’en avez pas.</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">Résultat</block>
+  <block id="e0a9be6d70e2b6cb105481ef3f492446" category="paragraph">La console ajoute le cluster découvert en tant que système sur la page *Systèmes*.  Vous pouvez maintenant commencer à gérer le cluster.</block>
+  <block id="299867ed6070a6cda18ae92e5d434213" category="inline-link-macro">Apprenez à gérer les clusters découverts directement</block>
+  <block id="c3995876aaed94f3589c1d9b516d3805" category="list-text"><block ref="c3995876aaed94f3589c1d9b516d3805" category="inline-link-macro-rx"></block></block>
+  <block id="0453a9f0adad145b25cfdf23836cf986" category="inline-link-macro">Découvrez comment gérer les clusters découverts avec un agent de console</block>
+  <block id="e2c6a7875938c9c1b6c4cd6512ef1725" category="list-text"><block ref="e2c6a7875938c9c1b6c4cd6512ef1725" category="inline-link-macro-rx"></block></block>
+  <block id="50bc63d3ce96c1c059c531930e9b1ccc" category="open-title">Ajouter un cluster pré-découvert</block>
+  <block id="d98fb334a40f1451770cc167b056faa2" category="paragraph">La console découvre les clusters ONTAP liés à votre e-mail de connexion et les affiche en tant que clusters non découverts sur la page * Discoverable systems*.  Vous pouvez afficher la liste des clusters non découverts et les ajouter un par un.</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">À propos de cette tâche</block>
+  <block id="197b34d819974addadfe4ebfa0e9caed" category="paragraph">Notez les points suivants concernant les clusters ONTAP sur site qui apparaissent sur la page * Discoverable systems* :</block>
+  <block id="d608748d30b65126cde843fad7310cca" category="list-text">L'adresse e-mail que vous utilisez pour vous connecter à la console doit être associée à un compte NetApp Support Site (NSS) enregistré et de niveau complet.</block>
+  <block id="8319f3680eb39ed6d3cf49d88c4bbdfa" category="list-text">Si vous vous connectez à la console avec votre compte NSS et accédez à la page * Discoverable systems*, la console utilise ce compte NSS pour rechercher les clusters associés au compte.</block>
+  <block id="3aaa86c6c9eab3f600bc23bde0047763" category="list-text">Si vous vous connectez à la console avec un compte local ou une connexion fédérée et que vous accédez à la page * Discoverable systems*, la console vous invite à vérifier votre e-mail.  Si cette adresse e-mail est associée à un compte NSS, la console utilise ces informations pour rechercher les clusters associés au compte.</block>
+  <block id="d550fcc1542a17f7a26ff22860afa620" category="list-text">La console affiche uniquement les clusters ONTAP qui ont envoyé avec succès des messages AutoSupport à NetApp.</block>
+  <block id="b85049c68ea838035f2d0a6a579b4c1b" category="list-text">Pour actualiser la liste d'inventaire, quittez la page * Discoverable systems*, attendez 5 minutes, puis revenez-y.</block>
+  <block id="513c356dd1e7dd7137d642be2b540c72" category="list-text">Sur la page * Discoverable systems*, sélectionnez * Découvrir * pour ONTAP sur site.</block>
+  <block id="fa855b00dc3ef3d4581d88ac0367d305" category="inline-image-macro">Une capture d’écran de la page Discoverable systems qui affiche 12 clusters ONTAP sur site non découverts.</block>
+  <block id="f28eb0a3fd5555f479ab815569393176" category="paragraph"><block ref="f28eb0a3fd5555f479ab815569393176" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7689e37bac08b82f66558bf21e5ea57d" category="list-text">Sélectionnez un cluster, puis sélectionnez *Découvrir*.</block>
+  <block id="1b437ef82724c92ca6ff7c3c322cd040" category="paragraph"><block ref="1b437ef82724c92ca6ff7c3c322cd040" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="eecdf85dabb12fb229d35075dd322550" category="list-text">Entrez le mot de passe du compte utilisateur administrateur.</block>
+  <block id="2b3c35ab7bf544cbfd4bda7b2b84c68d" category="paragraph">Si vous n’avez pas d’agent de console et que l’adresse IP n’est pas accessible depuis la console, vous serez invité à créer un agent de console.  Contactez votre administrateur de console pour créer un agent de console si vous n’en avez pas.</block>
+  <block id="5ae9e7fffccf52fce94c993af9db9dfa" category="summary">NetApp fournit une assistance de différentes manières. De nombreuses options d'auto-assistance gratuites sont disponibles 24h/24 et 7j/7, telles que des articles de la base de connaissances (KB) et un forum communautaire. Votre inscription au support inclut une assistance technique à distance via un ticket web.</block>
+  <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">Obtenir de l'aide</block>
+  <block id="2feeca48692986e9cc471ec61f847fca" category="paragraph">NetApp fournit un support pour NetApp Console et ses services cloud de diverses manières. De nombreuses options d'auto-assistance gratuites sont disponibles 24h/24 et 7j/7, telles que des articles de la base de connaissances (KB) et un forum communautaire. Votre inscription au support inclut une assistance technique à distance via un ticket web.</block>
+  <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">Obtenir de l'aide pour un service de fichiers d'un fournisseur cloud</block>
+  <block id="317cbd2c4fdbfd06a6c66bcd3f57d7ad" category="paragraph">Pour obtenir une assistance technique relative à un service de fichiers de fournisseur cloud, à son infrastructure ou à toute solution utilisant le service, reportez-vous à la documentation de ce produit.</block>
+  <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSx pour ONTAP</block>
+  <block id="359d8b16e442ffaa72e03c95fcd60448" category="list-text"><block ref="359d8b16e442ffaa72e03c95fcd60448" category="inline-link-macro-rx"></block></block>
+  <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
+  <block id="153836c062a78213f2aa165322254aa4" category="list-text"><block ref="153836c062a78213f2aa165322254aa4" category="inline-link-macro-rx"></block></block>
+  <block id="1215f8190533dfdf63d2224a6d88266f" category="inline-link-macro">Google Cloud NetApp Volumes</block>
+  <block id="0d592360c983f234b130127efee38805" category="list-text"><block ref="0d592360c983f234b130127efee38805" category="inline-link-macro-rx"></block></block>
+  <block id="68e6fe8cde496154d24fd032b4262070" category="paragraph">Pour bénéficier d'un support technique spécifique à NetApp et à ses solutions de stockage et services de données, utilisez les options de support décrites ci-dessous.</block>
+  <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">Utiliser les options d'auto-assistance</block>
+  <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">Ces options sont disponibles gratuitement, 24 heures sur 24, 7 jours sur 7 :</block>
+  <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">Documentation</block>
+  <block id="5bb94d173380c00577f5e04b6f26bb94" category="paragraph">La documentation de la NetApp Console que vous consultez actuellement.</block>
+  <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">Base de connaissances</block>
+  <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
+  <block id="0e20091afcea2d83d0033a933ba85092" category="paragraph">Recherchez dans la base de connaissances NetApp pour trouver des articles utiles pour résoudre les problèmes.</block>
+  <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">Communautés</block>
+  <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
+  <block id="777d75a90b107e4f18469f82c4f81fe2" category="paragraph">Rejoignez la communauté NetApp Console pour suivre les discussions en cours ou en créer de nouvelles.</block>
+  <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">Créer un dossier auprès du support NetApp</block>
+  <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">En plus des options d’auto-assistance ci-dessus, vous pouvez travailler avec un spécialiste du support NetApp pour résoudre tout problème après avoir activé le support.</block>
+  <block id="8fece025a1a8fef7018449bf104a2527" category="list-title">Avant de commencer</block>
+  <block id="c406bf0ac8ac87bc5bb7132a7351b2ae" category="inline-link">Découvrez comment gérer les informations d'identification associées à votre connexion à la console</block>
+  <block id="377118f28487e70bd456993144b72fc7" category="list-text">Pour utiliser la fonctionnalité *Créer un dossier*, vous devez d'abord associer vos informations d'identification du site de support NetApp à votre connexion à la console.<block ref="68c4321a756e3ffe955b62cff6fea46d" category="inline-link-rx"></block> .</block>
+  <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">Si vous ouvrez un dossier pour un système ONTAP doté d'un numéro de série, votre compte NSS doit être associé au numéro de série de ce système.</block>
+  <block id="0ab80a63088581d58dcf067051f4c894" category="list-text">Dans la NetApp Console, sélectionnez *Aide &gt; Support*.</block>
+  <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">Sur la page *Ressources*, choisissez l'une des options disponibles sous Support technique :</block>
+  <block id="6a1b74969231967ed071d465206b15c7" category="list-text">Sélectionnez *Appelez-nous* si vous souhaitez parler à quelqu'un au téléphone. Vous serez redirigé vers une page sur netapp.com qui répertorie les numéros de téléphone que vous pouvez appeler.</block>
+  <block id="d65a2a6fc9caad1867728d4382eeb989" category="list-text">Sélectionnez *Créer un dossier* pour ouvrir un ticket avec un spécialiste du support NetApp :</block>
+  <block id="a1123cd59d7bd876c080c33906ae65ce" category="list-text">*Service* : sélectionnez le service auquel le problème est associé. Par exemple, * NetApp Console* lorsqu'il s'agit d'un problème de support technique lié aux flux de travail ou aux fonctionnalités de la console.</block>
+  <block id="987df7518e2afb50a860647c832afd13" category="list-text">*Système* : Si applicable au stockage, sélectionnez * Cloud Volumes ONTAP* ou *On-Prem*, puis l'environnement de travail associé.</block>
+  <block id="8f8e8a86e5f52b6186a37bdf266c4320" category="paragraph">La liste des systèmes est dans le périmètre de l'organisation de la console et de l'agent de console que vous avez sélectionné dans la bannière supérieure.</block>
+  <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*Priorité du cas* : Choisissez la priorité du cas, qui peut être Faible, Moyenne, Élevée ou Critique.</block>
+  <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">Pour en savoir plus sur ces priorités, passez votre souris sur l’icône d’information à côté du nom du champ.</block>
+  <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*Description du problème* : Fournissez une description détaillée de votre problème, y compris tous les messages d'erreur applicables ou les étapes de dépannage que vous avez effectuées.</block>
+  <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">*Adresses e-mail supplémentaires* : saisissez des adresses e-mail supplémentaires si vous souhaitez informer quelqu'un d'autre de ce problème.</block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*Pièce jointe (facultatif)* : Téléchargez jusqu'à cinq pièces jointes, une à la fois.</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">Les pièces jointes sont limitées à 25 Mo par fichier. Les extensions de fichiers suivantes sont prises en charge : txt, log, pdf, jpg/jpeg, rtf, doc/docx, xls/xlsx et csv.</block>
+  <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">Capture d'écran du formulaire Créer un cas qui vous permet de créer un cas auprès du support NetApp .</block>
+  <block id="77c89527ec8a9f89b24c5579d19b3b4b" category="paragraph"><block ref="77c89527ec8a9f89b24c5579d19b3b4b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">Après avoir terminé</block>
+  <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">Une fenêtre contextuelle apparaîtra avec votre numéro de dossier d'assistance. Un spécialiste du support NetApp examinera votre cas et vous répondra dans les plus brefs délais.</block>
+  <block id="0ff9b4b8684b9e03c9c1e1320935eae3" category="paragraph">Pour un historique de vos demandes d'assistance, vous pouvez sélectionner *Paramètres &gt; Chronologie* et rechercher les actions nommées « créer une demande d'assistance ». Un bouton à l’extrême droite vous permet de développer l’action pour voir les détails.</block>
+  <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">Il est possible que vous rencontriez le message d'erreur suivant lorsque vous essayez de créer un dossier :</block>
+  <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">« Vous n'êtes pas autorisé à créer un dossier contre le service sélectionné »</block>
+  <block id="178fdaf97b1d1577437f11ee9d5e5229" category="paragraph">Cette erreur peut signifier que le compte NSS et la société d'enregistrement à laquelle il est associé ne sont pas la même société d'enregistrement pour le numéro de série du compte NetApp Console (c'est-à-dire. 960xxxx) ou le numéro de série de l'environnement de travail. Vous pouvez demander de l’aide en utilisant l’une des options suivantes :</block>
+  <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">Soumettez un cas non technique à<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
+  <block id="e1100b46295d42ed50ba7a4630710164" category="section-title">Gérez vos cas d'assistance</block>
+  <block id="316508a3483178100806a9d44b49aba2" category="paragraph">Vous pouvez afficher et gérer les cas d'assistance actifs et résolus directement depuis la console. Vous pouvez gérer les cas associés à votre compte NSS et à votre entreprise.</block>
+  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">Notez ce qui suit :</block>
+  <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">Le tableau de bord de gestion des cas en haut de la page offre deux vues :</block>
+  <block id="01c3ffea552d74a5ae390b10e71a1f26" category="list-text">La vue de gauche montre le nombre total de dossiers ouverts au cours des 3 derniers mois par le compte utilisateur NSS que vous avez fourni.</block>
+  <block id="e3b6c09a5686233f72ce1ea60a1eb088" category="list-text">La vue de droite affiche le nombre total de dossiers ouverts au cours des 3 derniers mois au niveau de votre entreprise en fonction de votre compte utilisateur NSS.</block>
+  <block id="b19b168cc8a2b8c984465e140256b3a2" category="paragraph">Les résultats du tableau reflètent les cas liés à la vue que vous avez sélectionnée.</block>
+  <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">Vous pouvez ajouter ou supprimer des colonnes d'intérêt et filtrer le contenu des colonnes telles que Priorité et Statut. D'autres colonnes fournissent simplement des capacités de tri.</block>
+  <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">Consultez les étapes ci-dessous pour plus de détails.</block>
+  <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">Au niveau de chaque cas, nous offrons la possibilité de mettre à jour les notes du cas ou de fermer un cas qui n'est pas déjà au statut Fermé ou En attente de fermeture.</block>
+  <block id="9163e8bca6fd93c080d35ab49e3efdfa" category="list-text">Dans la NetApp Console, sélectionnez *Aide &gt; Support*.</block>
+  <block id="2019fd19051c3ef493dbbb9ca65bab87" category="list-text">Sélectionnez *Gestion des cas* et si vous y êtes invité, ajoutez votre compte NSS à la console.</block>
+  <block id="75e54e3a6fdbf43ed890669e079d7594" category="paragraph">La page *Gestion des cas* affiche les cas ouverts liés au compte NSS associé à votre compte utilisateur de la console. Il s'agit du même compte NSS qui apparaît en haut de la page *Gestion NSS*.</block>
+  <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">Modifiez éventuellement les informations qui s'affichent dans le tableau :</block>
+  <block id="1d39d3ab518e1e3f16cbafb2a56e1fd9" category="list-text">Sous *Cas de l'organisation*, sélectionnez *Afficher* pour afficher tous les cas associés à votre entreprise.</block>
+  <block id="059e856250b59be3069246887b74a23c" category="list-text">Modifiez la plage de dates en choisissant une plage de dates exacte ou en choisissant une période différente.</block>
+  <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">Filtrer le contenu des colonnes.</block>
+  <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">L'icône plus qui apparaît dans le tableau</block>
+  <block id="8ac6be88c1aa79062825a147fb263b0e" category="list-text">Modifiez les colonnes qui apparaissent dans le tableau en sélectionnant<block ref="500a336e7ba1c54bcffba4e27bda4eb6" category="inline-image-macro-rx" type="image"></block> et ensuite choisir les colonnes que vous souhaitez afficher.</block>
+  <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">Une icône avec trois points qui apparaît dans la dernière colonne du tableau</block>
+  <block id="049b7b9fab1242f5e715952973c9474d" category="list-text">Gérer un dossier existant en sélectionnant<block ref="7381d9baeaf62eb099ce84f1a21ed5ca" category="inline-image-macro-rx" type="image"></block> et en sélectionnant l’une des options disponibles :</block>
+  <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*Voir le cas* : Afficher tous les détails sur un cas spécifique.</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*Mettre à jour les notes du cas* : fournissez des détails supplémentaires sur votre problème ou sélectionnez *Télécharger des fichiers* pour joindre jusqu'à un maximum de cinq fichiers.</block>
+  <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*Fermer le dossier* : Fournissez des détails sur les raisons pour lesquelles vous fermez le dossier et sélectionnez *Fermer le dossier*.</block>
+  <block id="a9d2b231be58ba78da487485a012df4d" category="summary">Si vous avez découvert un cluster ONTAP sur site à l’aide d’un agent de console, vous pouvez créer des volumes à partir de la vue Standard, utiliser le Gestionnaire système à partir de la vue Avancé et activer les services de données NetApp .</block>
+  <block id="c6b00f700b6dcffdab6b25d4859b46d6" category="doc">Gérer les clusters découverts avec un agent de console</block>
+  <block id="881287054d54d10a72082525431b4094" category="paragraph">Si vous avez découvert un cluster ONTAP sur site à l'aide d'un agent de console, vous pouvez créer des volumes directement à partir de la NetApp Console, accéder à ONTAP System Manager (directement à partir de la console) pour une gestion avancée et activer les services de données NetApp .</block>
+  <block id="f3d96e033470d8fb9d043aed29754d44" category="paragraph-title">Rôle de NetApp Console requis :</block>
+  <block id="34333d2783171ddc2c4a2d45b04576db" category="inline-link-macro">En savoir plus sur les rôles d’accès à la console.</block>
+  <block id="b6972ad05aaffd2256e1f4196b3f0181" category="paragraph">Administrateur de stockage ou spécialiste de la santé du système.<block ref="22172649aa14c41e7c407b3a26adac77" category="inline-link-macro-rx"></block></block>
+  <block id="cf211f2f2ca8898d52b780cfc60bdcf8" category="paragraph">Sur la page *Systèmes*, l'icône système d'un cluster que vous avez découvert avec un agent de console ressemble à ce qui suit :</block>
+  <block id="9bd6333fd6e2ed164aa82d89dafc36c1" category="inline-image-macro">Capture d’écran de l’icône système qui apparaît lorsqu’un cluster est découvert avec un agent de console.</block>
+  <block id="120e83f6a9a03904f641af7138dda0cf" category="paragraph"><block ref="120e83f6a9a03904f641af7138dda0cf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1b1875649f81731ada50212ba023b95d" category="paragraph">Si vous découvrez un système directement, l'icône du système affiche le mot « Direct ».</block>
+  <block id="4edb0a9cc3286a0bbb7212a914b6e120" category="section-title">Créer des volumes FlexVol à partir de la NetApp Console</block>
+  <block id="82a5e9967af6f4bedeeea9542788633b" category="paragraph">Après avoir ajouté votre cluster ONTAP local à la console à l’aide d’un agent de console, vous pouvez provisionner et gérer les volumes FlexVol directement à partir de la console.</block>
+  <block id="6fe0e1924361c77ff96555f402550a91" category="paragraph">La console vous permet de créer des volumes NFS ou CIFS sur des agrégats existants.  Vous ne pouvez pas créer de nouveaux agrégats sur un cluster ONTAP local à partir des pages de la console native ; toutefois, vous pouvez accéder au gestionnaire système ONTAP correspondant à partir de la console pour créer des agrégats.</block>
+  <block id="07862f39f97a91d6da489cb9fcbd4a6e" category="list-text">Sur la page *Systèmes*, sélectionnez le cluster ONTAP local sur lequel vous souhaitez provisionner des volumes.</block>
+  <block id="ba426b409f9ec6763d7b1ecebd5d576f" category="list-text">Sélectionnez *Volumes &gt; Ajouter un volume*.</block>
+  <block id="108a74a6cbb575c986177039e07dc411" category="list-text">Suivez les étapes de l’assistant pour créer le volume.</block>
+  <block id="a28aaa114e91d430f853038c9ac17766" category="list-text">*Détails, protection et balises* : saisissez les détails du volume, comme son nom et sa taille, et choisissez une politique d'instantané.</block>
+  <block id="3b0e375a08fe94a129cba31916c9d2dc" category="paragraph">Certains champs de cette page sont explicites.  La liste suivante décrit les domaines pour lesquels vous pourriez avoir besoin de conseils :</block>
+  <block id="6f16a5f8ff5d75ab84c018adacdfcbb7" category="cell">Champ</block>
+  <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">Description</block>
+  <block id="6f6cb72d544962fa333e2e34ce64f719" category="cell">Taille</block>
+  <block id="f0969d995c7dbb837aab515d5c8cf9cd" category="cell">La taille maximale dépend de l'activation ou non du provisionnement dynamique, ce qui vous permet de créer un volume plus grand que le stockage physique disponible.</block>
+  <block id="426fb47479d0477ed5dbc9388b9add76" category="cell">Politique d'instantané</block>
+  <block id="a64d5e9b653437dfe9118e099d6e5fe0" category="cell">Une stratégie de copie Snapshot définit la fréquence et le nombre de copies Snapshot NetApp créées.  Une copie NetApp Snapshot est une image de système de fichiers à un instant T qui n'a aucun impact sur les performances et nécessite un stockage minimal.  Vous pouvez choisir la politique par défaut ou aucune.  Vous pouvez choisir « aucun » pour les données transitoires, telles que la base de données temporaire (tempdb) pour Microsoft SQL Server.</block>
+  <block id="17b6d3e2bf5506b5e797dfb98b76c0c2" category="list-text">*Protocole* : Choisissez le protocole du volume (NFS, CIFS ou iSCSI), puis définissez le contrôle d'accès ou les autorisations pour le volume.</block>
+  <block id="f5296ac4fcfeea3d9c6e0ac9781d4fb4" category="paragraph">Si vous choisissez CIFS sans serveur, le système vous invite à en configurer un à l’aide d’Active Directory ou d’un groupe de travail.</block>
+  <block id="10ca883ec839df9958683234c16faa0c" category="paragraph">La liste suivante décrit les domaines pour lesquels vous pourriez avoir besoin de conseils :</block>
+  <block id="8aaaedc342a0dce1d73d33f3fb69a2af" category="cell">Contrôle d'accès</block>
+  <block id="b144a097e0b772113f639011f9d76708" category="cell">Une politique d’exportation NFS définit les clients du sous-réseau qui peuvent accéder au volume.  Par défaut, la console entre une valeur qui donne accès à toutes les instances du sous-réseau.</block>
+  <block id="4f365bcd27fae641194545a5a823e30f" category="cell">Autorisations et utilisateurs/groupes</block>
+  <block id="5cd4beaa083f2301775c1a1bc84f2afc" category="cell">Ces champs vous permettent de contrôler le niveau d'accès à un partage SMB pour les utilisateurs et les groupes (également appelés listes de contrôle d'accès ou ACL).  Vous pouvez spécifier des utilisateurs ou des groupes Windows locaux ou de domaine, ou des utilisateurs ou des groupes UNIX.  Si vous spécifiez un nom d’utilisateur Windows de domaine, vous devez inclure le domaine de l’utilisateur en utilisant le format domaine\nom d’utilisateur.</block>
+  <block id="a17ea0b6ec5074b6e385c43de80e900d" category="list-text">*Profil d'utilisation* : choisissez d'activer ou de désactiver les fonctionnalités d'efficacité de stockage sur le volume afin de réduire la quantité totale de stockage dont vous avez besoin.</block>
+  <block id="b664e4294e5d14d6fd3d39615d4e3341" category="list-text">*Révision* : Vérifiez les détails du volume, puis sélectionnez *Ajouter*.</block>
+  <block id="18f620d7129450814e89dd8624baaabd" category="section-title">Créer des volumes FlexGroup avec l'API de la NetApp Console</block>
+  <block id="be168fd03f07ecad35da4b2f85259c97" category="paragraph">Vous pouvez utiliser l’API de la NetApp Console pour créer des volumes FlexGroup .  Un volume FlexGroup est un volume évolutif qui offre des performances élevées ainsi qu'une répartition automatique de la charge.</block>
+  <block id="b72566f4d301c9dec06189b65b061300" category="inline-link">Découvrez comment créer un volume FlexGroup à l'aide de l'API</block>
+  <block id="7e22f91f39a086e048c658886855471a" category="list-text"><block ref="7e22f91f39a086e048c658886855471a" category="inline-link-rx"></block></block>
+  <block id="e7461a0e7365faaf906e51d1b1097e0a" category="section-title">Accéder à ONTAP System Manager depuis la NetApp Console</block>
+  <block id="9bf279f44fa1199c88b295609de7537a" category="paragraph">Vous pouvez accéder à l’interface ONTAP System Manager directement dans la console.</block>
+  <block id="8eb2deaa21e5bd2cb3cb15dfa00cd221" category="paragraph">Lorsque vous accédez à ONTAP System Manager depuis la console, vous avez accès à des fonctionnalités de gestion supplémentaires :</block>
+  <block id="f3c3ee89c80d32726f5f937c07631d1c" category="list-text">Gestion avancée du stockage</block>
+  <block id="81988711ef6c9af40c8e8973f25c0bed" category="paragraph">Gérez les groupes de cohérence, les partages, les qtrees, les quotas et les machines virtuelles de stockage.</block>
+  <block id="62735a856683757bf28f1f02f97c151c" category="list-text">Gestion du réseau</block>
+  <block id="9fe3a531f2a0b0fa8d13b28253cecfae" category="paragraph">Gérez les espaces IP, les interfaces réseau, les ensembles de ports et les ports Ethernet.</block>
+  <block id="5da3380058f326675f5268466ae0c24f" category="list-text">Événements et emplois</block>
+  <block id="59536015b2a8a8d499cbe947387acb5e" category="paragraph">Afficher les journaux d’événements, les alertes système, les tâches et les journaux d’audit.</block>
+  <block id="3f20b3134627198be1e0ff879a88cd8f" category="list-text">Protection avancée des données</block>
+  <block id="18edb92cf2cbf5a1d60be48cff4de617" category="paragraph">Protégez les machines virtuelles de stockage, les LUN et les groupes de cohérence.</block>
+  <block id="f17e729a409e6c0faa3ddab50e856b07" category="list-text">Gestion de l'hôte</block>
+  <block id="36eae32729ecc4b53ba38b252bc6b356" category="paragraph">Configurer des groupes d’initiateurs SAN et des clients NFS.</block>
+  <block id="1f0b82560627b660c6c6958a1df834b8" category="section-title">Configurations prises en charge</block>
+  <block id="8cc569c03bd345c450afe055c793f724" category="paragraph">La gestion avancée via System Manager est prise en charge avec les clusters ONTAP sur site exécutant 9.10.0 ou une version ultérieure.</block>
+  <block id="0f1ca4e2133610fdc8b23e4db3f7cb0c" category="paragraph">L'intégration de System Manager n'est pas prise en charge dans les régions GovCloud ou dans les régions qui n'ont pas d'accès Internet sortant.</block>
+  <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">Limites</block>
+  <block id="336f2f04e5298afbd5aa6cb9ef65c0a6" category="paragraph">Certaines fonctionnalités de System Manager ne sont pas prises en charge avec les clusters ONTAP sur site lors de l'accès à ONTAP System Manager via la console.</block>
+  <block id="480454c8f8beef2524f1fbdddc48ea12" category="inline-link-macro">Consultez la liste des limitations</block>
+  <block id="bfe73fc0abe25019e3e0d76f17653911" category="paragraph"><block ref="736a4b96dd4361a68ef1dd0a557122e0" category="inline-link-macro-rx"></block> .</block>
+  <block id="8fafecc267da91bb6fb518f47268f73d" category="paragraph">Ouvrez le gestionnaire système du système.</block>
+  <block id="44b7ffdcf84f31c030ae673e3b4e8e6e" category="list-text">Dans le panneau de droite, sous *Services*, recherchez *Gestionnaire système* et sélectionnez *Ouvrir*.</block>
+  <block id="c754fa00d5ed3d48cea99de36d7621eb" category="list-text">Si vous voyez le message de confirmation, lisez-le et sélectionnez *Fermer*.</block>
+  <block id="2384fee5ec28c392c4824455705673ad" category="list-text">Utilisez System Manager pour gérer ONTAP.</block>
+  <block id="2c069ca180c796bc045f42b645e2abc2" category="list-text">Si nécessaire, sélectionnez *Passer à la vue standard* pour revenir à la gestion standard via la console.</block>
+  <block id="15bab318d1405cd84d8a70ed7aaecf79" category="inline-image-macro">Capture d’écran d’un système ONTAP sur site qui affiche l’option Passer à la vue standard.</block>
+  <block id="3087bb399b70b702117806fdbcf6d90b" category="paragraph"><block ref="3087bb399b70b702117806fdbcf6d90b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5d82c1ade2b4a73465d28377bf1ee806" category="section-title">Obtenez de l'aide avec le Gestionnaire système</block>
+  <block id="eb75aeb3b4b2b9734ba3e52f5483f0b2" category="inline-link">Documentation ONTAP</block>
+  <block id="9c1bd416df0d466347865d11e934dec2" category="paragraph">Si vous avez besoin d'aide pour utiliser System Manager avec ONTAP, vous pouvez vous référer à<block ref="e4712fca3ed0fd9138bc58dbf36327e9" category="inline-link-rx"></block> pour des instructions étape par étape.  Voici quelques liens qui pourraient vous aider :</block>
+  <block id="b9cf2d579e6b088870d384fe9910b52f" category="inline-link">Gestion des volumes et des LUN</block>
+  <block id="8fc667c489390551a74eb985b297d37a" category="list-text"><block ref="8fc667c489390551a74eb985b297d37a" category="inline-link-rx"></block></block>
+  <block id="3e49e5936cffd2e96856c25fa0417df2" category="inline-link">Gestion de réseau</block>
+  <block id="57614f27dec39901199cca4b61cebfe9" category="list-text"><block ref="57614f27dec39901199cca4b61cebfe9" category="inline-link-rx"></block></block>
+  <block id="7e7397a7b79323762c61941fc0e6b5f9" category="inline-link">Protection des données</block>
+  <block id="168463a2e30ac746441036fb49df730e" category="list-text"><block ref="168463a2e30ac746441036fb49df730e" category="inline-link-rx"></block></block>
+  <block id="ea4016495f0c69205df568b441270dea" category="section-title">Activer les services de données NetApp</block>
+  <block id="0e645dc9accc33c592fb30035dcb36d7" category="paragraph">Activez les services de données NetApp sur vos systèmes pour répliquer les données, sauvegarder les données, hiérarchiser les données, etc.</block>
+  <block id="37fa21b7ca602fd8fe055b26a1de7d8b" category="list-text">Répliquer les données</block>
+  <block id="7dfe1792c76bc1bec7f64c0b01460178" category="list-text">Répliquer les données entre les systèmes Cloud Volumes ONTAP , les systèmes de fichiers Amazon FSx for ONTAP et les clusters ONTAP .  Choisissez une réplication de données ponctuelle, qui peut vous aider à déplacer des données vers et depuis le cloud, ou une planification récurrente, qui peut faciliter la reprise après sinistre ou la conservation des données à long terme.</block>
+  <block id="279d4e41c00858c0d60b99ca08f46b19" category="inline-link">Documentation sur la NetApp Replication</block>
+  <block id="2367e8bf588f100d84a2c29e29e8c907" category="paragraph"><block ref="2367e8bf588f100d84a2c29e29e8c907" category="inline-link-rx"></block></block>
+  <block id="b76ae88aa754ea86825b84c8badae90a" category="list-text">Sauvegarder les données</block>
+  <block id="32f4a4b77e8bb8a5997c35c84f226d07" category="list-text">Sauvegardez les données de votre système ONTAP sur site vers un stockage d'objets à faible coût dans le cloud.</block>
+  <block id="bef219d35a4468480b0ce759221cdceb" category="inline-link">Documentation sur la NetApp Backup and Recovery</block>
+  <block id="7375334c3c7c9a083e03c7131f344586" category="paragraph"><block ref="7375334c3c7c9a083e03c7131f344586" category="inline-link-rx"></block></block>
+  <block id="b62196e30035e69996a2d1d3a9d64116" category="list-text">Numérisez, cartographiez et classez vos données</block>
+  <block id="6c8d5da78ab1fbae76a8c2a84cdb0a7c" category="list-text">Analysez vos clusters d’entreprise sur site pour cartographier et classer les données et identifier les informations privées.  Cela peut vous aider à réduire vos risques de sécurité et de conformité, à diminuer vos coûts de stockage et à vous aider dans vos projets de migration de données.</block>
+  <block id="e6d9434fa5832019fb3968212fe539d4" category="inline-link">Documentation sur la NetApp Data Classification</block>
+  <block id="c61fc509c7d144be9b40f399aec87219" category="paragraph"><block ref="c61fc509c7d144be9b40f399aec87219" category="inline-link-rx"></block></block>
+  <block id="840a495adf1ad99ebc0b2945d0d37848" category="list-text">Transférer les données vers le cloud</block>
+  <block id="bdaba8e114e06250b64623fa35d279e2" category="list-text">Étendez votre centre de données au cloud en hiérarchisant automatiquement les données inactives des clusters ONTAP vers le stockage d’objets.</block>
+  <block id="dbf638b2df9fdd6b028f3a442df69395" category="inline-link">Documentation sur la NetApp Cloud Tiering</block>
+  <block id="bff727b4f0c46a7987ef3660c6da5046" category="paragraph"><block ref="bff727b4f0c46a7987ef3660c6da5046" category="inline-link-rx"></block></block>
+  <block id="81e1fcaa1ce96a674b79e47a02d7f4ba" category="list-text">Identifier les clusters à faible capacité</block>
+  <block id="51e044d8773594c45c2c2e9e8516f151" category="list-text">Identifiez les clusters à faible capacité et examinez leur capacité actuelle et prévue.</block>
+  <block id="65d5453513b11126367650b2ace7b545" category="inline-link">Documentation sur la planification du cycle de vie de NetApp</block>
+  <block id="f62b0728a78dac8e9d66e3b316922630" category="paragraph"><block ref="f62b0728a78dac8e9d66e3b316922630" category="inline-link-rx"></block></block>
+  <block id="e25e74f7a3a1427deef4f7de959c877b" category="summary">Si vous avez découvert votre cluster ONTAP sur site directement sans utiliser d’agent de NetApp Console , vous pouvez ouvrir le système dans la NetApp Console pour gérer le cluster à l’aide d’ ONTAP System Manager.</block>
+  <block id="f220a85318c5d7c44ae499953fe06af6" category="doc">Gérer les clusters découverts directement dans la NetApp Console</block>
+  <block id="6812f9c2da4f9b9bd904f6a6b0f3a843" category="paragraph">Si vous avez découvert votre cluster ONTAP sur site directement sans utiliser d’agent de console, vous pouvez ouvrir le système dans la console pour gérer le cluster et accéder à ONTAP System Manager.</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">Avant de commencer</block>
+  <block id="30f10af7823f75e5b832221041c2b2c7" category="paragraph">Certaines fonctionnalités du Gestionnaire système ne sont pas prises en charge depuis la console.</block>
+  <block id="5258b0ad03422027351074f593328453" category="list-text">Sur la page *Systèmes*, sélectionnez le système ONTAP sur site.</block>
+  <block id="585bfbcb83296ccf6f29d325347284b8" category="paragraph">L'icône système identifie les clusters qui ont été découverts directement :</block>
+  <block id="be8e40c832ae54c93886321cf506bda7" category="inline-image-macro">Une capture d'écran de l'icône système qui apparaît sur la page Système</block>
+  <block id="a321eaeada5485d9a16aa7b0157e75f3" category="paragraph"><block ref="a321eaeada5485d9a16aa7b0157e75f3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d6a0741adb3101b3ac8caa5bee63eb9e" category="list-text">Si vous y êtes invité, saisissez vos informations d’identification ONTAP .</block>
+  <block id="b82d5da63e23eb494fa2701700cbc876" category="paragraph">Le système vous invite à vous connecter avec vos informations d'identification ONTAP à chaque fois que vous l'ouvrez, sauf si vous enregistrez les informations d'identification. Vous pouvez les enregistrer pour ne pas avoir à les saisir à chaque fois. Vous pouvez gérer ces identifiants sur la page « Identifiants utilisateur ».  Dans certains cas, votre administrateur de console (avec le rôle d’administrateur d’organisation) peut avoir désactivé cette option et vous demander de saisir vos informations d’identification à chaque fois.</block>
+  <block id="c4d0d6d40840ebb3d4f4f87b4309d6b6" category="inline-image-macro">Une capture d’écran qui montre l’invite pour saisir le nom d’utilisateur et le mot de passe pour un cluster ONTAP .</block>
+  <block id="ae0f0582f8fc53d392de639973d7187a" category="paragraph"><block ref="ae0f0582f8fc53d392de639973d7187a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="01b2e40f70aa5b1647bad39c0e42ed66" category="paragraph">Si vous avez besoin d'aide pour utiliser System Manager avec ONTAP, vous pouvez vous référer à<block ref="e4712fca3ed0fd9138bc58dbf36327e9" category="inline-link-rx"></block> pour des instructions étape par étape.  Les liens suivants fournissent des conseils supplémentaires :</block>
+  <block id="dd4fd7614d5aea1d6f631403bb514c52" category="summary">Supprimez un système ONTAP sur site si vous ne souhaitez plus le gérer à partir de la NetApp Console.</block>
+  <block id="76f38e29c115772351beb41864ff5c81" category="doc">Supprimer un système ONTAP sur site de la NetApp Console</block>
+  <block id="01ec14985a4fc153f411e09eb8fe4a27" category="paragraph">Supprimez un système ONTAP sur site si vous ne souhaitez plus le gérer depuis la console.</block>
+  <block id="dc939254afcbaac455a5533661695230" category="paragraph">Administrateur de stockage<block ref="f934f8c47ee938050655a3fea2497dd8" category="inline-link-macro-rx"></block></block>
+  <block id="df296b472c9a688b1de6306b097577a5" category="paragraph">La suppression du système n’affecte pas le cluster ONTAP .  Vous pouvez le redécouvrir depuis la Console à tout moment.</block>
+  <block id="01244d40060090a6be948854713ddd90" category="list-text">Sélectionnez le système ONTAP sur site sur la page *Systèmes*.</block>
+  <block id="7c9f32f73fa06aecdeb526cf83b2809c" category="list-text">Sélectionnez l'icône de menu et sélectionnez *Supprimer de l'espace de travail*.</block>
+  <block id="b7dd0331ad4ede9488c2fd01dda69e83" category="list-text">Sélectionnez *Supprimer* pour confirmer.</block>
+  <block id="6269943bbab503c57445a47b04897eaa" category="summary">Avant de pouvoir ouvrir un dossier d'assistance auprès du support technique NetApp , vous devez ajouter un compte de site de support NetApp à la NetApp Console , puis vous inscrire au support.</block>
+  <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">Inscrivez-vous pour obtenir de l'aide</block>
+  <block id="776abbf4d80cbef17bd3c86ff37b2257" category="paragraph">L'enregistrement du support est requis pour bénéficier d'un support technique spécifique à la NetApp Console et à ses solutions de stockage et services de données. L'enregistrement du support est également requis pour activer les flux de travail clés pour les systèmes Cloud Volumes ONTAP .</block>
+  <block id="ba4e23e03f4354a0f1ef2781272c8477" category="paragraph">L'inscription au support n'active pas la prise en charge NetApp pour un service de fichiers de fournisseur cloud. Pour obtenir une assistance technique relative à un service de fichiers de fournisseur cloud, à son infrastructure ou à toute solution utilisant le service, reportez-vous à « Obtenir de l'aide » dans la documentation de ce produit.</block>
+  <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">Présentation de l'enregistrement de l'assistance</block>
+  <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">Il existe deux formes d'inscription pour activer le droit au support :</block>
+  <block id="869a868c87f6fb61410cfd773b4f1bab" category="list-text">Enregistrement du numéro de série de votre compte NetApp Console (votre numéro de série 960xxxxxxxxx à 20 chiffres situé sur la page Ressources de support de la console).</block>
+  <block id="be0b51de4268d87101344aa0368b4403" category="paragraph">Il s'agit de votre identifiant d'abonnement d'assistance unique pour tout service au sein de la console. Chaque compte de console doit être enregistré.</block>
+  <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">Enregistrement des numéros de série Cloud Volumes ONTAP associés à un abonnement sur la place de marché de votre fournisseur de cloud (il s'agit de numéros de série 909201xxxxxxxx à 20 chiffres).</block>
+  <block id="3cf9fb70d6921dd90583621f028a395f" category="paragraph">Ces numéros de série sont communément appelés _numéros de série PAYGO_ et sont générés par la NetApp Console au moment du déploiement de Cloud Volumes ONTAP .</block>
+  <block id="bf516b6498e37e816d29ae43ae132f74" category="paragraph">L'enregistrement des deux types de numéros de série permet des fonctionnalités telles que l'ouverture de tickets d'assistance et la génération automatique de dossiers. L'enregistrement est terminé en ajoutant des comptes NetApp Support Site (NSS) à la console comme décrit ci-dessous.</block>
+  <block id="ba5983207e417797fefd5b9374ab4a97" category="section-title">Enregistrez la NetApp Console pour le support NetApp</block>
+  <block id="dcb7105ba6e3d9411b05e726848feb80" category="paragraph">Pour vous inscrire au support et activer le droit de support, un utilisateur de votre compte NetApp Console doit associer un compte de site de support NetApp à sa connexion à la console. La manière dont vous vous inscrivez au support NetApp dépend du fait que vous possédez déjà ou non un compte NetApp Support Site (NSS).</block>
+  <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">Client existant avec un compte NSS</block>
+  <block id="ed5bddb699a442b85bc1bb8e1516fe57" category="paragraph">Si vous êtes un client NetApp avec un compte NSS, il vous suffit de vous inscrire pour bénéficier de l'assistance via la console.</block>
+  <block id="76bc427c3d9c4b81dc353078b942f991" category="list-text">Sélectionnez *Administration* &gt; *Informations d'identification*.</block>
+  <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">Sélectionnez *Informations d'identification de l'utilisateur*.</block>
+  <block id="e9451600769b4bf4b20ca941ba9e6d19" category="list-text">Sélectionnez *Ajouter des informations d’identification NSS* et suivez l’invite d’authentification du site de support NetApp (NSS).</block>
+  <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">Pour confirmer que le processus d’inscription a réussi, sélectionnez l’icône Aide, puis sélectionnez *Assistance*.</block>
+  <block id="1d4ea9fd10f6cfcd6f6fe1f861d354a4" category="paragraph">La page *Ressources* devrait indiquer que votre compte Console est enregistré pour l'assistance.</block>
+  <block id="afe8240ca62f4b72006980ff64d371b8" category="paragraph">Notez que les autres utilisateurs de la console ne verront pas ce même statut d'enregistrement de support s'ils n'ont pas associé un compte de site de support NetApp à leur connexion. Cependant, cela ne signifie pas que votre compte n'est pas enregistré pour bénéficier de l'assistance. Tant qu'un utilisateur de l'organisation a suivi ces étapes, votre compte a été enregistré.</block>
+  <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">Client existant mais pas de compte NSS</block>
+  <block id="42eaca1e1c2d9e1f04e932eeaa6d129d" category="paragraph">Si vous êtes un client NetApp existant avec des licences et des numéros de série existants mais _pas_ de compte NSS, vous devez créer un compte NSS et l'associer à votre connexion à la console.</block>
+  <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">Formulaire d'inscription des utilisateurs du site de support NetApp</block>
+  <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">Créez un compte sur le site de support NetApp en remplissant le<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
+  <block id="d61c9f72493817776f392db42ac446a2" category="list-text">Assurez-vous de sélectionner le niveau d'utilisateur approprié, qui est généralement * Client/Utilisateur final NetApp *.</block>
+  <block id="bd33c4539c7d6985f6edafd4a4f2ba1d" category="list-text">Assurez-vous de copier le numéro de série du compte de console (960xxxx) utilisé ci-dessus pour le champ du numéro de série. Cela accélérera le traitement du compte.</block>
+  <block id="9b1f48f88cd439b7a50fe3e76eb8a853" category="list-text">Associez votre nouveau compte NSS à votre connexion à la console en suivant les étapes ci-dessous<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block> .</block>
+  <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">Tout nouveau chez NetApp</block>
+  <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">Si vous êtes nouveau sur NetApp et que vous n’avez pas de compte NSS, suivez chaque étape ci-dessous.</block>
+  <block id="e7e9f49f4584c68b9d97c578e73b7583" category="list-text">Dans le coin supérieur droit de la console, sélectionnez l’icône Aide, puis sélectionnez *Support*.</block>
+  <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">Recherchez le numéro de série de votre identifiant de compte sur la page d'inscription au support.</block>
+  <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">Une capture d'écran du menu Aide où Support est la première option répertoriée</block>
+  <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">Site d'inscription au support de NetApp</block>
+  <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">Accéder à<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> et sélectionnez *Je ne suis pas un client NetApp enregistré*.</block>
+  <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">Remplissez les champs obligatoires (ceux avec des astérisques rouges).</block>
+  <block id="1128fc8d5ec64880f4d49337ed798d31" category="list-text">Dans le champ *Gamme de produits*, sélectionnez *Cloud Manager*, puis sélectionnez votre fournisseur de facturation applicable.</block>
+  <block id="50a1dc01b7312307c34a888071586955" category="list-text">Copiez le numéro de série de votre compte à l'étape 2 ci-dessus, effectuez la vérification de sécurité, puis confirmez que vous avez lu la politique de confidentialité des données mondiales de NetApp.</block>
+  <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">Un email est immédiatement envoyé à la boîte mail prévue à cet effet pour finaliser cette transaction sécurisée. Assurez-vous de vérifier vos dossiers spam si l'e-mail de validation n'arrive pas dans quelques minutes.</block>
+  <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">Confirmez l'action depuis l'e-mail.</block>
+  <block id="201080500e946070a2e4873042507c77" category="paragraph">La confirmation soumet votre demande à NetApp et vous recommande de créer un compte sur le site de support NetApp .</block>
+  <block id="a2454703f88e5bf5b433ae850a87151b" category="list-text">Assurez-vous de copier le numéro de série du compte (960xxxx) utilisé ci-dessus pour le champ du numéro de série. Cela accélérera le traitement.</block>
+  <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">NetApp devrait vous contacter au cours de ce processus. Il s’agit d’un exercice d’intégration unique pour les nouveaux utilisateurs.</block>
+  <block id="629757336278be576456cf315303b178" category="paragraph">Une fois que vous avez votre compte de site de support NetApp , associez le compte à votre connexion à la console en suivant les étapes ci-dessous<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block> .</block>
+  <block id="3e616bae81890a6c8fae17c9b45af152" category="section-title">Associer les informations d'identification NSS pour la prise en charge de Cloud Volumes ONTAP</block>
+  <block id="f22d1a855e255746a6b925a3b22f7838" category="paragraph">L'association des informations d'identification du site de support NetApp à votre compte de console est requise pour activer les workflows clés suivants pour Cloud Volumes ONTAP:</block>
+  <block id="a0518a10626dc11fd00e2d20265ad240" category="list-text">Enregistrement des systèmes Cloud Volumes ONTAP prépayés pour le support</block>
+  <block id="321aadf78ef73521712291b7aba6411f" category="paragraph">Fournir votre compte NSS est nécessaire pour activer le support de votre système et pour accéder aux ressources de support technique NetApp .</block>
+  <block id="d51b2b497db445a16b1c9583c1abbb59" category="list-text">Déploiement de Cloud Volumes ONTAP lorsque vous apportez votre propre licence (BYOL)</block>
+  <block id="f3cd224f9506684fa3b5e2b89b2a566c" category="paragraph">Il est nécessaire de fournir votre compte NSS pour que la console puisse télécharger votre clé de licence et activer l'abonnement pour la durée que vous avez achetée. Cela inclut les mises à jour automatiques pour les renouvellements de mandat.</block>
+  <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Mise à niveau du logiciel Cloud Volumes ONTAP vers la dernière version</block>
+  <block id="daf104544b5203a46e1580e1b8583f1f" category="paragraph">L’association des informations d’identification NSS à votre compte de NetApp Console est différente du compte NSS associé à une connexion utilisateur de console.</block>
+  <block id="5bc1315a63455544e7a917a7cc968939" category="paragraph">Ces informations d’identification NSS sont associées à votre ID de compte de console spécifique. Les utilisateurs appartenant à l'organisation Console peuvent accéder à ces informations d'identification depuis *Support &gt; Gestion NSS*.</block>
+  <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">Si vous disposez d’un compte client, vous pouvez ajouter un ou plusieurs comptes NSS.</block>
+  <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">Si vous disposez d'un compte partenaire ou revendeur, vous pouvez ajouter un ou plusieurs comptes NSS, mais ils ne peuvent pas être ajoutés aux côtés des comptes de niveau client.</block>
+  <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">Sélectionnez *Gestion NSS &gt; Ajouter un compte NSS*.</block>
+  <block id="85b9386ed443776127e099931d73448a" category="list-text">Lorsque vous y êtes invité, sélectionnez *Continuer* pour être redirigé vers une page de connexion Microsoft.</block>
+  <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp utilise Microsoft Entra ID comme fournisseur d’identité pour les services d’authentification spécifiques au support et aux licences.</block>
+  <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">Sur la page de connexion, indiquez votre adresse e-mail et votre mot de passe enregistrés sur le site de support NetApp pour effectuer le processus d'authentification.</block>
+  <block id="7687b0a57d5cb728d9fb892dfc814715" category="paragraph">Ces actions permettent à la console d'utiliser votre compte NSS pour des tâches telles que les téléchargements de licences, la vérification des mises à niveau de logiciels et les futures inscriptions au support.</block>
+  <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">Le compte NSS doit être un compte de niveau client (pas un compte invité ou temporaire). Vous pouvez avoir plusieurs comptes NSS au niveau client.</block>
+  <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">Il ne peut y avoir qu'un seul compte NSS si ce compte est un compte de niveau partenaire. Si vous essayez d'ajouter des comptes NSS au niveau client et qu'un compte au niveau partenaire existe, vous obtiendrez le message d'erreur suivant :</block>
+  <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">« Le type de client NSS n'est pas autorisé pour ce compte car il existe déjà des utilisateurs NSS de types différents. »</block>
+  <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">Il en va de même si vous disposez de comptes NSS préexistants au niveau client et que vous essayez d’ajouter un compte au niveau partenaire.</block>
+  <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">Une fois la connexion réussie, NetApp stockera le nom d'utilisateur NSS.</block>
+  <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">Une icône de trois points horizontaux</block>
+  <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">Il s’agit d’un identifiant généré par le système qui correspond à votre e-mail. Sur la page *Gestion NSS*, vous pouvez afficher votre e-mail à partir du<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> menu.</block>
+  <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">Si vous avez besoin d'actualiser vos jetons d'identification de connexion, il existe également une option *Mettre à jour les informations d'identification* dans le<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> menu.</block>
+  <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">L'utilisation de cette option vous invite à vous reconnecter. Notez que le jeton de ces comptes expire après 90 jours. Une notification sera publiée pour vous en informer.</block>
+  <block id="e0edd80b0e8de4011b4f65a694972a94" category="summary">Le portefeuille numérique vous permet de visualiser les détails du contrat pour chacun de vos clusters ONTAP sur site.  Si vous n'avez pas encore découvert de cluster, vous pouvez également le faire à partir du portefeuille numérique.</block>
+  <block id="4bbcdd6338e8631576e63f1156b1c51d" category="doc">Afficher les informations du cluster et les détails du contrat</block>
+  <block id="6df3323445fef3ae34ed813f1100ca8e" category="paragraph">Vous pouvez afficher les détails du contrat pour chacun de vos clusters ONTAP sur site dans la NetApp Console . Si vous n'avez pas encore découvert de cluster, vous pouvez également le faire à partir de la page *Abonnements et licences*.</block>
+  <block id="93214f7aede3b63ad14457a9b7aa0d59" category="paragraph">Administrateur de stockage ou visualiseur de stockage.<block ref="f934f8c47ee938050655a3fea2497dd8" category="inline-link-macro-rx"></block></block>
+  <block id="f37fdd0902b8053298a78162a62ee3ca" category="inline-link">En savoir plus sur la gestion des licences pour les clusters ONTAP sur site depuis la console</block>
+  <block id="f4eeb0c21981518065c13b60deb3e7ee" category="paragraph"><block ref="f4eeb0c21981518065c13b60deb3e7ee" category="inline-link-rx"></block></block>
+  <block id="f38bfe4e4ca70348bab102b16fa118d4" category="summary">Découvrez les nouveautés de la gestion des clusters ONTAP sur site dans BlueXP.</block>
+  <block id="d49f4ce16fe87aeaa9f7ac3eec77a6b9" category="doc">Nouveautés des clusters ONTAP sur site dans la NetApp Console</block>
+  <block id="2377e3aaf0d094a2e815b5f4f66a56d0" category="paragraph">Découvrez les nouveautés de la gestion des clusters ONTAP sur site dans la NetApp Console.</block>
+  <block id="a41dd7aa7d921f9f0881a705d3679e6c" category="section-title">06 octobre 2025</block>
+  <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">12 mai 2025</block>
+  <block id="d415b73567ff8e090cdf21c20afeaa64" category="section-title">26 novembre 2024</block>
+  <block id="e5182edc3707e8e354c40ab7fa819f39" category="section-title">7 octobre 2024</block>
+  <block id="9d5b3307d5a7d5905623bf21ab049bdd" category="section-title">22 avril 2024</block>
+  <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">30 juillet 2023</block>
+  <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2 juillet 2023</block>
+  <block id="11f4fef53a39b0e83d4fdb9f922e768e" category="section-title">Découverte de clusters de mon domaine</block>
+  <block id="4573c689742769edc01e3f45205fd784" category="paragraph">Vous pouvez désormais découvrir les clusters ONTAP sur site à partir de *Canvas &gt; Mon domaine* en sélectionnant un cluster que BlueXP a pré-découvert en fonction des clusters ONTAP associés à l'adresse e-mail de votre connexion BlueXP .</block>
+  <block id="5a7621b5dce7d879d4fc86499c34c6e6" category="inline-link">Découvrez comment découvrir des clusters à partir de la page Mon domaine</block>
+  <block id="1951934b46748440d19112b4ffcd364d" category="paragraph"><block ref="7f676133db675e979593f57c98268fc6" category="inline-link-rx"></block> .</block>
+  <block id="7e43a762816453626bbf35533afa1755" category="section-title">4 mai 2023</block>
+  <block id="4addbe3fd43e1a48fd8eb999d5f3b487" category="section-title">Activer la BlueXP backup and recovery</block>
+  <block id="f5303ee41218fc978c78d7744749c918" category="inline-link-macro">En savoir plus sur l'activation de la BlueXP backup and recovery</block>
+  <block id="b4dac87ad594b04c0dcd76d4227b5f53" category="paragraph">À partir d' ONTAP 9.13.1, vous pouvez utiliser System Manager (vue avancée) pour activer la BlueXP backup and recovery si vous avez découvert le cluster à l'aide d'un connecteur.<block ref="e052ae4f2be0dcbae408a5e7fa45055e" category="inline-link-macro-rx"></block></block>
+  <block id="f3d662d271f05f454f32718233b273b8" category="section-title">Mettre à niveau l'image de la version ONTAP et le micrologiciel du matériel</block>
+  <block id="31599c36bc63510a259d9bd99e50d225" category="inline-link-macro">En savoir plus sur la mise à niveau ONTAP et du micrologiciel</block>
+  <block id="8fc7dd0bb44c44f9797d86872cb017cc" category="paragraph">À partir d' ONTAP 9.10.1, vous pouvez utiliser System Manager (vue avancée) pour mettre à niveau l'image de la version ONTAP et le micrologiciel matériel.  Vous pouvez choisir de recevoir des mises à jour automatiques pour rester à jour, ou vous pouvez effectuer des mises à jour manuelles à partir de votre machine locale ou d'un serveur accessible via BlueXP.<block ref="d994c74c98eb05bb27c8a6afc3cc2159" category="inline-link-macro-rx"></block></block>
+  <block id="09dfe5e2e7b8574b925ad72bc7875409" category="admonition">Si vous n'avez pas de connecteur, vous ne pouvez pas effectuer de mises à jour depuis votre machine locale, mais uniquement depuis un serveur accessible via BlueXP.</block>
+  <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">3 avril 2023</block>
+  <block id="44a722c1e42cdb4002c75bb29403670b" category="section-title">Option de découverte unique depuis la console BlueXP</block>
+  <block id="7023e56782327af6f409e1889ae33345" category="paragraph">Lorsque vous découvrez un cluster ONTAP sur site à partir de la console BlueXP , vous verrez désormais une seule option :</block>
+  <block id="d70ed695b081fff2505f285b0540727b" category="inline-image-macro">Une capture d'écran qui montre l'option Discover on-premises ONTAP disponible lors de la création d'un environnement de travail</block>
+  <block id="16f044147dbed62a5d79cc67ff4c4e12" category="paragraph"><block ref="16f044147dbed62a5d79cc67ff4c4e12" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3d85937cd401956877664b5f7128cc5d" category="paragraph">Auparavant, il existait des flux distincts pour la découverte directe et pour la découverte avec un connecteur.  Ces deux options sont toujours disponibles, mais fusionnées en un seul flux.</block>
+  <block id="251a667be8662557b7aba30c53380da3" category="paragraph">Lorsque vous démarrez le processus de découverte, BlueXP découvre le cluster comme suit :</block>
+  <block id="02067bb3de9c60175abe8c4b7d81c3c2" category="list-text">Si vous disposez d'un connecteur actif connecté à votre cluster ONTAP , BlueXP utilisera ce connecteur pour découvrir et gérer le cluster.</block>
+  <block id="1f98df6cf22b8e11ecbe762c7b523860" category="list-text">Si vous n'avez pas de connecteur ou si votre connecteur n'a pas de connexion au cluster ONTAP , BlueXP utilisera automatiquement l'option de découverte et de gestion directes.</block>
+  <block id="873b328fabdfb8db13a38e03c836d37b" category="inline-link">En savoir plus sur les options de découverte et de gestion</block>
+  <block id="558e7420e0dccdf8c6209c99cb12de8c" category="paragraph"><block ref="8f8244e4b9ad47d49332b24703323193" category="inline-link-rx"></block> .</block>
+  <block id="1f7138998459804601fc351f8d442e29" category="section-title">1er janvier 2023</block>
+  <block id="f2e4e4f7b0b864863bfac74f4383a826" category="section-title">Enregistrer les informations d'identification ONTAP</block>
+  <block id="7d830b76e4f0014bb7468c045f40070d" category="paragraph">Lorsque vous ouvrez un environnement de travail ONTAP local qui a été découvert directement sans utiliser de connecteur, vous avez désormais la possibilité d'enregistrer vos informations d'identification de cluster ONTAP afin de ne pas avoir à les saisir à chaque fois que vous ouvrez l'environnement de travail.</block>
+  <block id="8a08a7490f38dacd86c415a138d60aea" category="inline-link">En savoir plus sur cette option.</block>
+  <block id="a23c373384e67cc6a8bdb7e286aa5040" category="paragraph"><block ref="a23c373384e67cc6a8bdb7e286aa5040" category="inline-link-rx"></block></block>
+  <block id="83ec139c80a3d5b2f11f1a94eed47cd2" category="section-title">4 décembre 2022</block>
+  <block id="b5690ceb7beb4242754890f225e479d3" category="section-title">Nouvelle façon de découvrir les clusters ONTAP sur site</block>
+  <block id="c01d068bb0abdf0bdf6a772adc67e2cd" category="paragraph">Vous pouvez désormais découvrir directement vos clusters ONTAP sur site sans utiliser de connecteur.  Cette option permet la gestion des clusters via le Gestionnaire système uniquement.  Vous ne pouvez activer aucun service de données BlueXP sur ce type d'environnement de travail.</block>
+  <block id="336404297eaddf0051e1d62c3d3bb48e" category="inline-link">En savoir plus sur cette option de découverte et de gestion</block>
+  <block id="d5ea4df2d2834605f028deaaf0d0e4b7" category="paragraph"><block ref="5b619b4d77180540fb45f8f2d3b7390b" category="inline-link-rx"></block> .</block>
+  <block id="ee1ef6cf0f3971b44eb2abcac958fb8d" category="section-title">Volumes FlexGroup</block>
+  <block id="c712ad51a932168a912654cc42bbce87" category="paragraph">Pour les clusters ONTAP sur site découverts via un connecteur, la vue Standard dans BlueXP affiche désormais les volumes FlexGroup créés via System Manager ou l'interface de ligne de commande ONTAP .  Vous pouvez également gérer ces volumes en les clonant, en modifiant leurs paramètres, en les supprimant, etc.</block>
+  <block id="2907843476579cb2696e8e0e783a2a07" category="inline-image-macro">Une capture d’écran qui montre un volume FlexGroup sur la page Volumes pour un cluster ONTAP sur site.</block>
+  <block id="dc5b52fbc51f76a35c3e45df4d428946" category="paragraph"><block ref="dc5b52fbc51f76a35c3e45df4d428946" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c081854506aed2f757f753e779bc45f" category="paragraph">BlueXP ne prend pas en charge la création de volumes FlexGroup .  Vous devrez continuer à utiliser System Manager ou l’interface de ligne de commande pour créer des volumes FlexGroup .</block>
+  <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">18 septembre 2022</block>
+  <block id="c8328d07fc05c4708c68f547ce6f5e77" category="section-title">Nouvelle page d'aperçu</block>
+  <block id="8e41db9b51f790909ef80a064153f722" category="paragraph">Nous avons introduit une nouvelle page de présentation pour fournir des détails clés sur un cluster ONTAP sur site.  Par exemple, vous pouvez désormais afficher des détails tels que l’efficacité du stockage, la répartition de la capacité et les informations système.</block>
+  <block id="d35ea0fa6a3d81047f0a36a7dfac1c07" category="paragraph">Vous pouvez également afficher les détails sur l’intégration avec d’autres services BlueXP qui permettent la hiérarchisation des données, la réplication des données et les sauvegardes.</block>
+  <block id="fba766c98683be4af93f93b5d7909f1e" category="inline-image-macro">Une capture d’écran qui montre la page Présentation d’un cluster ONTAP sur site.</block>
+  <block id="78b1fedbe8da959c777a0ee21f8ffd2b" category="paragraph"><block ref="78b1fedbe8da959c777a0ee21f8ffd2b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c76ff3fb4e35074fc6f04c1cb8ea02af" category="section-title">Page Volumes repensée</block>
+  <block id="99cbfcbab5c608668044fc3849d8db46" category="paragraph">Nous avons repensé la page Volumes pour fournir un résumé des volumes d’un cluster.  Le résumé vous indique le nombre total de volumes, la quantité de capacité provisionnée, la capacité utilisée et réservée, ainsi que la quantité de données hiérarchisées.</block>
+  <block id="2f82cdfc06b6747c85937b5cceabaaee" category="inline-image-macro">Une capture d’écran qui montre la page Volumes pour un cluster ONTAP sur site.</block>
+  <block id="c88a605be9a3ab0b60a88e3190ea5a35" category="paragraph"><block ref="c88a605be9a3ab0b60a88e3190ea5a35" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f8b475a3fefebada77a30229238d0a1a" category="section-title">7 juin 2022</block>
+  <block id="ffe3ec3b5faef58a758d9449470882a0" category="section-title">Nouvelle vue avancée</block>
+  <block id="5549a52d6578bcb66138c7319ef4ea11" category="paragraph">Si vous devez effectuer une gestion avancée d'un cluster ONTAP sur site, vous pouvez le faire à l'aide d' ONTAP System Manager, une interface de gestion fournie avec un système ONTAP .  Nous avons inclus l'interface System Manager directement dans Cloud Manager afin que vous n'ayez pas besoin de quitter Cloud Manager pour une gestion avancée.</block>
+  <block id="99721ad2e6d601b2966a9d9e1c7de770" category="paragraph">Cette vue avancée est disponible en tant qu’aperçu avec les clusters ONTAP sur site exécutant la version 9.10.0 ou une version ultérieure.  Nous prévoyons d’affiner cette expérience et d’ajouter des améliorations dans les prochaines versions.  Veuillez nous envoyer vos commentaires en utilisant le chat intégré au produit.</block>
+  <block id="b1f50daaafce361695fc65132af507a0" category="inline-link-macro">Apprenez à gérer les clusters découverts avec un connecteur</block>
+  <block id="2dad31dff556d88636e28fd5a3f6e2ac" category="list-text"><block ref="2dad31dff556d88636e28fd5a3f6e2ac" category="inline-link-macro-rx"></block></block>
+  <block id="ba26e4556a0f160834687982b0479336" category="section-title">27 février 2022</block>
+  <block id="c09e2822c570628d904cc9ae1b81258c" category="section-title">Un onglet « On-Premises ONTAP» est disponible dans le portefeuille numérique</block>
+  <block id="b6476152a5181e4e223915202e88e1a9" category="paragraph">Vous pouvez désormais afficher un inventaire de vos clusters ONTAP sur site ainsi que les dates d’expiration de leurs contrats matériels et de service.  Des détails supplémentaires sur les clusters sont également disponibles.</block>
+  <block id="c363f739f5bdf65a6ab4cae2b97b0d8a" category="inline-link">Découvrez comment afficher ces informations importantes sur le cluster sur site</block>
+  <block id="708ffb45fd0b5501a732cfc35fbc5f96" category="paragraph"><block ref="ae6c564b336ca8e35b8022cee2674c1a" category="inline-link-rx"></block> . Vous devrez disposer d'un compte de site de support NetApp (NSS) pour les clusters, et les informations d'identification NSS devront être associées à votre compte Cloud Manager.</block>
+  <block id="ef1bf4095b622ba80ac24b48b8e45eac" category="section-title">11 janvier 2022</block>
+  <block id="43129a2fa4cbb252b200eba8ad6d79d2" category="section-title">Les balises que vous ajoutez aux volumes sur les clusters ONTAP locaux peuvent être utilisées avec le service de balisage</block>
+  <block id="ba38e2fd40d303ca0ee880c6170d261e" category="paragraph">Les balises que vous ajoutez à un volume sont désormais associées à la fonctionnalité de balisage du service Modèles d’application, ce qui peut vous aider à organiser et à simplifier la gestion de vos ressources.</block>
+  <block id="815875df5fff32fea9f6fdbf1cbef929" category="sidebar">Gérez vos systèmes NetApp AFF et FAS à partir de la NetApp Console pour provisionner le stockage, répliquer les données et configurer des services de données critiques basés sur le cloud.</block>
+  <block id="94f32f47073dfcc881de05302c1e3400" category="sidebar">Gestion des clusters ONTAP sur site à l'aide de la NetApp Console</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Commencer</block>
+  <block id="7a57cd895ed6c692c6eaacc459f5c5b2" category="sidebar">En savoir plus sur la gestion des clusters ONTAP sur site</block>
+  <block id="a1ebf612d281c8e7fb16bbfa253b9627" category="sidebar">Découvrez les clusters ONTAP</block>
+  <block id="b35f676cd57c5084bb41b8d6a60f6523" category="sidebar">Gérer les clusters ONTAP sur site dans la NetApp Console</block>
+  <block id="86c7810a751199da86e2984eefab0cbf" category="sidebar">Gérer les clusters découverts directement</block>
+  <block id="0178bb7fb4ec8e073676fa0da5569b44" category="sidebar">Gérer les clusters découverts avec un agent de console</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blogs et communauté</block>
+  <block id="cc58d3a9b2264c4fd8cb1d3f61b90bdc" category="sidebar">NetApp Data Services</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Communauté NetApp</block>
+  <block id="eaf9642551d4f86b536ff28bb60b7751" category="sidebar">Clusters ONTAP sur site dans la NetApp Console</block>
+  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">Notes de version</block>
+  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Quoi de neuf</block>
+  <block id="482723983a4f2af954e36ff41e567451" category="sidebar">Limitations connues</block>
+  <block id="54b737e9455930faa1699b8dc97ccd5d" category="sidebar">En savoir plus sur la gestion des clusters ONTAP sur site</block>
+  <block id="c5fbee6586294d81141f8dd158707985" category="sidebar">Découvrez les clusters ONTAP sur site</block>
+  <block id="cfa980e1df20173742498c19249c0f50" category="sidebar">Gérer les clusters ONTAP sur site</block>
+  <block id="9783331c17eb2368b5f57b943b56dd4b" category="sidebar">Gérer les clusters découverts avec un agent de console</block>
+  <block id="d3db502b671c154b98dfced0b397de36" category="sidebar">Afficher les informations du cluster et les détails du contrat</block>
+  <block id="3421bf5b6f922329d7ac7ff73a34370f" category="sidebar">Supprimer un système ONTAP sur site</block>
+  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Connaissances et soutien</block>
+</blocks>

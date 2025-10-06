@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-manage-ontap-direct.html 
 keywords: direct discovery, direct, system manager, local, local discovery, 
-summary: Si vous avez découvert votre cluster ONTAP sur site directement sans utiliser d’agent de console NetApp , vous pouvez ouvrir le système dans la console NetApp pour gérer le cluster à l’aide d’ ONTAP System Manager. 
+summary: Si vous avez découvert votre cluster ONTAP sur site directement sans utiliser d’agent de NetApp Console , vous pouvez ouvrir le système dans la NetApp Console pour gérer le cluster à l’aide d’ ONTAP System Manager. 
 ---
-= Gérer les clusters découverts directement dans la console NetApp
+= Gérer les clusters découverts directement dans la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -34,7 +34,7 @@ Ces options sont disponibles gratuitement, 24 heures sur 24, 7 jours sur 7 :
 
 * Documentation
 +
-La documentation de la console NetApp que vous consultez actuellement.
+La documentation de la NetApp Console que vous consultez actuellement.
 
 * https://kb.netapp.com/Cloud/BlueXP["Base de connaissances"^]
 +
@@ -58,7 +58,7 @@ En plus des options d’auto-assistance ci-dessus, vous pouvez travailler avec u
 
 
 .Étapes
-. Dans la console NetApp , sélectionnez *Aide > Support*.
+. Dans la NetApp Console, sélectionnez *Aide > Support*.
 . Sur la page *Ressources*, choisissez l'une des options disponibles sous Support technique :
 +
 .. Sélectionnez *Appelez-nous* si vous souhaitez parler à quelqu'un au téléphone. Vous serez redirigé vers une page sur netapp.com qui répertorie les numéros de téléphone que vous pouvez appeler.
@@ -127,7 +127,7 @@ Consultez les étapes ci-dessous pour plus de détails.
 
 
 .Étapes
-. Dans la console NetApp , sélectionnez *Aide > Support*.
+. Dans la NetApp Console, sélectionnez *Aide > Support*.
 . Sélectionnez *Gestion des cas* et si vous y êtes invité, ajoutez votre compte NSS à la console.
 +
 La page *Gestion des cas* affiche les cas ouverts liés au compte NSS associé à votre compte utilisateur de la console. Il s'agit du même compte NSS qui apparaît en haut de la page *Gestion NSS*.

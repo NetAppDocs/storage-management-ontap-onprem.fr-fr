@@ -14,9 +14,9 @@ summary: 'Le portefeuille numérique vous permet de visualiser les détails du c
 
 
 [role="lead"]
-Vous pouvez afficher les détails du contrat pour chacun de vos clusters ONTAP sur site dans la console NetApp . Si vous n'avez pas encore découvert de cluster, vous pouvez également le faire à partir de la page *Abonnements et licences*.
+Vous pouvez afficher les détails du contrat pour chacun de vos clusters ONTAP sur site dans la NetApp Console . Si vous n'avez pas encore découvert de cluster, vous pouvez également le faire à partir de la page *Abonnements et licences*.
 
 .Rôle de console requis :
-Administrateur de stockage ou visualiseur de stockage.link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["En savoir plus sur les rôles d’accès à la console NetApp ."^]
+Administrateur de stockage ou visualiseur de stockage.link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["En savoir plus sur les rôles d’accès à la NetApp Console ."^]
 
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-on-prem-clusters.html["En savoir plus sur la gestion des licences pour les clusters ONTAP sur site depuis la console"^]

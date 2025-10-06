@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-remove-on-prem.html 
 keywords: ontap, cluster, remove, delete, remove ontap cluster, remove onprem, delete cluster, delete working environment, remove working environment, storage admin, netapp console, console remove system 
-summary: Supprimez un système ONTAP sur site si vous ne souhaitez plus le gérer à partir de la console NetApp . 
+summary: Supprimez un système ONTAP sur site si vous ne souhaitez plus le gérer à partir de la NetApp Console. 
 ---
-= Supprimer un système ONTAP sur site de la console NetApp
+= Supprimer un système ONTAP sur site de la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -17,7 +17,7 @@ summary: Supprimez un système ONTAP sur site si vous ne souhaitez plus le gére
 Supprimez un système ONTAP sur site si vous ne souhaitez plus le gérer depuis la console.
 
 .Rôle de console requis :
-Administrateur de stockagelink:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["En savoir plus sur les rôles d’accès à la console NetApp ."^]
+Administrateur de stockagelink:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["En savoir plus sur les rôles d’accès à la NetApp Console ."^]
 
 La suppression du système n’affecte pas le cluster ONTAP .  Vous pouvez le redécouvrir depuis la Console à tout moment.
 

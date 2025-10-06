@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-discovering-ontap.html 
 keywords: ontap, cluster, discover, manage, discovering, fas, aff, discover onprem, discover aff cluster, discover cluster, add cluster, active iq, roles, dubscriptions, licenses, digital advisor 
-summary: 'Découvrez les clusters ONTAP sur site à partir de la console NetApp afin de pouvoir commencer à gérer les volumes et à effectuer une gestion avancée à l"aide d" ONTAP System Manager, disponible à partir de la console.' 
+summary: 'Découvrez les clusters ONTAP sur site à partir de la NetApp Console afin de pouvoir commencer à gérer les volumes et à effectuer une gestion avancée à l"aide d" ONTAP System Manager, disponible à partir de la console.' 
 ---
-= Découvrez les clusters ONTAP sur site dans la console NetApp
+= Découvrez les clusters ONTAP sur site dans la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,10 +14,10 @@ summary: 'Découvrez les clusters ONTAP sur site à partir de la console NetApp 
 
 
 [role="lead"]
-Découvrez les clusters ONTAP sur site à partir de la console NetApp afin de pouvoir commencer à gérer les volumes et à effectuer une gestion avancée à l'aide d' ONTAP System Manager, directement à partir de la console.
+Découvrez les clusters ONTAP sur site à partir de la NetApp Console afin de pouvoir commencer à gérer les volumes et à effectuer une gestion avancée à l'aide d' ONTAP System Manager, directement à partir de la console.
 
 .Rôle de console requis :
-Administrateur de stockage ou spécialiste de la santé du système.link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["En savoir plus sur les rôles d’accès à la console NetApp ."^]
+Administrateur de stockage ou spécialiste de la santé du système.link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["En savoir plus sur les rôles d’accès à la NetApp Console ."^]
 
 
 
@@ -28,7 +28,7 @@ Vous pouvez ajouter des clusters ONTAP locaux à la console de deux manières.  
 Découverte et gestion à l'aide d'un agent de console:: Cette option vous permet de gérer les clusters exécutant ONTAP 8.3 et versions ultérieures à l'aide des fonctionnalités suivantes :
 +
 --
-* Fournit des opérations de volume de base de manière native via la console NetApp
+* Fournit des opérations de volume de base de manière native via la NetApp Console
 * ONTAP System Manager (pris en charge avec ONTAP 9.10.0 et versions ultérieures), accédez au System Manager pour chaque cluster respectif directement depuis la console
 * Intégration avec les services de données NetApp qui fournissent la réplication des données, la sauvegarde et la récupération, la classification des données et la hiérarchisation du cloud
 * Vous devez disposer du rôle d’administrateur d’organisation pour installer un agent de console.  Contactez votre administrateur de console si vous avez des questions. https://docs.netapp.com/us-en/console-setup-admin/task-user-settings.html#contact-your-organization-administrator["Contactez l'administrateur de votre organisation."^]
@@ -47,7 +47,7 @@ Lorsque vous accédez au Gestionnaire système sur un cluster ONTAP local exécu
 
 Une fois découverts, vos clusters sont disponibles sur la page *Systèmes* de la console.
 
-Si vous décidez d'ajouter un agent de console à votre console NetApp , vous devez rajouter votre cluster sur site à partir de la page *Systèmes non découverts*.  Cela permet une gestion native depuis la console et l'accès aux services de données NetApp .  Vous devez ensuite supprimer l’autre système.
+Si vous décidez d'ajouter un agent de console à votre NetApp Console, vous devez rajouter votre cluster sur site à partir de la page *Systèmes non découverts*.  Cela permet une gestion native depuis la console et l'accès aux services de données NetApp .  Vous devez ensuite supprimer l’autre système.
 
 
 
@@ -91,7 +91,7 @@ Conditions requises pour la découverte directe::
 +
 --
 * Le cluster sur site doit exécuter ONTAP 9.12.1 ou une version ultérieure.
-* Le cluster doit disposer d'une connectivité entrante et sortante au service de console NetApp :
+* Le cluster doit disposer d'une connectivité entrante et sortante au service de NetApp Console :
 +
 \ https://cloudmanager.cloud.netapp.com/ontap-service/check-service-connection
 
@@ -108,7 +108,7 @@ Conditions requises pour la découverte directe::
 Découvrez vos clusters ONTAP sur site à partir de la console de deux manières :
 
 * Dans *Stockage > Gestion > Systèmes*, sélectionnez *Ajouter +* et ajoutez manuellement les détails sur le cluster ONTAP local.
-* Dans *Stockage > Gestion > Systèmes détectables*, sélectionnez un cluster que la console a pré-détecté en fonction des clusters ONTAP associés à l'adresse e-mail de votre connexion à la console NetApp .
+* Dans *Stockage > Gestion > Systèmes détectables*, sélectionnez un cluster que la console a pré-détecté en fonction des clusters ONTAP associés à l'adresse e-mail de votre connexion à la NetApp Console .
 
 
 Lorsque vous démarrez le processus de découverte, la console découvre un cluster comme suit :
@@ -131,7 +131,7 @@ Découvrez un cluster ONTAP sur site dans la console en saisissant l’adresse I
 . Sur la page _Discover_, entrez l’adresse IP de gestion du cluster et le mot de passe du compte utilisateur administrateur.
 . Si vous découvrez le cluster directement (sans agent de console), sélectionnez *Enregistrer les informations d'identification*.
 +
-Si vous sélectionnez cette option, vous n’aurez pas besoin de ressaisir les informations d’identification à chaque fois que vous accédez au système depuis la console.  Ces informations d’identification sont associées à votre propre connexion utilisateur à la console NetApp .  Ils ne sont pas enregistrés pour être utilisés par quelqu'un d'autre dans l'organisation de la console NetApp .
+Si vous sélectionnez cette option, vous n’aurez pas besoin de ressaisir les informations d’identification à chaque fois que vous accédez au système depuis la console.  Ces informations d’identification sont associées à votre propre connexion utilisateur à la NetApp Console .  Ils ne sont pas enregistrés pour être utilisés par quelqu'un d'autre dans l'organisation de la NetApp Console .
 
 . Sélectionnez *Découvrir*.
 +
@@ -140,7 +140,7 @@ Si vous n’avez pas d’agent de console et que l’adresse IP n’est pas acce
 
 
 .Résultat
-La console ajoute le cluster découvert en tant que système sur la page *Systèmes*. Vous pouvez maintenant commencer à gérer le cluster.
+La console ajoute le cluster découvert en tant que système sur la page *Systèmes*.  Vous pouvez maintenant commencer à gérer le cluster.
 
 * link:task-manage-ontap-direct.html["Apprenez à gérer les clusters découverts directement"]
 * link:task-manage-ontap-connector.html["Découvrez comment gérer les clusters découverts avec un agent de console"]
@@ -149,30 +149,30 @@ La console ajoute le cluster découvert en tant que système sur la page *Systè
 --
 .Ajouter un cluster pré-découvert
 --
-La console découvre les clusters ONTAP liés à votre e-mail de connexion et les affiche en tant que clusters non découverts sur la page *Systèmes détectables*.  Vous pouvez afficher la liste des clusters non découverts et les ajouter un par un.
+La console découvre les clusters ONTAP liés à votre e-mail de connexion et les affiche en tant que clusters non découverts sur la page * Discoverable systems*.  Vous pouvez afficher la liste des clusters non découverts et les ajouter un par un.
 
 .À propos de cette tâche
-Notez les points suivants concernant les clusters ONTAP sur site qui apparaissent sur la page *Systèmes détectables* :
+Notez les points suivants concernant les clusters ONTAP sur site qui apparaissent sur la page * Discoverable systems* :
 
 * L'adresse e-mail que vous utilisez pour vous connecter à la console doit être associée à un compte NetApp Support Site (NSS) enregistré et de niveau complet.
 +
-** Si vous vous connectez à la console avec votre compte NSS et accédez à la page *Systèmes détectables*, la console utilise ce compte NSS pour rechercher les clusters associés au compte.
-** Si vous vous connectez à la console avec un compte local ou une connexion fédérée et que vous accédez à la page *Systèmes détectables*, la console vous invite à vérifier votre e-mail.  Si cette adresse e-mail est associée à un compte NSS, la console utilise ces informations pour rechercher les clusters associés au compte.
+** Si vous vous connectez à la console avec votre compte NSS et accédez à la page * Discoverable systems*, la console utilise ce compte NSS pour rechercher les clusters associés au compte.
+** Si vous vous connectez à la console avec un compte local ou une connexion fédérée et que vous accédez à la page * Discoverable systems*, la console vous invite à vérifier votre e-mail.  Si cette adresse e-mail est associée à un compte NSS, la console utilise ces informations pour rechercher les clusters associés au compte.
 
 
 * La console affiche uniquement les clusters ONTAP qui ont envoyé avec succès des messages AutoSupport à NetApp.
-* Pour actualiser la liste d'inventaire, quittez la page *Systèmes détectables*, attendez 5 minutes, puis revenez-y.
+* Pour actualiser la liste d'inventaire, quittez la page * Discoverable systems*, attendez 5 minutes, puis revenez-y.
 
 
 .Étapes
 . Dans le menu de navigation, sélectionnez *Stockage > Gestion*.
-. Sur la page *Systèmes détectables*, sélectionnez *Découvrir* pour ONTAP sur site.
+. Sur la page * Discoverable systems*, sélectionnez * Découvrir * pour ONTAP sur site.
 +
-image:screenshot-my-estate-ontap.png["Une capture d’écran de la page Systèmes détectables qui affiche 12 clusters ONTAP sur site non découverts."]
+image:screenshot-my-estate-ontap.png["Une capture d’écran de la page Discoverable systems qui affiche 12 clusters ONTAP sur site non découverts."]
 
 . Sélectionnez un cluster, puis sélectionnez *Découvrir*.
 +
-image:screenshot-my-estate-ontap-discover.png["Une capture d’écran de la page Systèmes détectables qui affiche 12 clusters ONTAP sur site non découverts."]
+image:screenshot-my-estate-ontap-discover.png["Une capture d’écran de la page Discoverable systems qui affiche 12 clusters ONTAP sur site non découverts."]
 
 . Entrez le mot de passe du compte utilisateur administrateur.
 . Sélectionnez *Découvrir*.

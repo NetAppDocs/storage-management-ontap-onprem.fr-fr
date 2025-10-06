@@ -4,7 +4,7 @@ permalink: reference-limitations.html
 keywords: limitations, system manager, unsupported features, on-premises ONTAP in NetApp Console 
 summary: 'Les limitations connues identifient les plates-formes, les appareils ou les fonctions qui ne sont pas pris en charge par cette version du produit ou qui n"interagissent pas correctement avec elle. Examinez attentivement ces limitations.' 
 ---
-= Limitations connues de la gestion des clusters ONTAP sur site dans la console NetApp
+= Limitations connues de la gestion des clusters ONTAP sur site dans la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

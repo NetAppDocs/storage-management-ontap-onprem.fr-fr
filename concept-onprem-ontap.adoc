@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-onprem-ontap.html 
 keywords: ontap, cluster, discover, manage, discovering, fas, aff, discover onprem, discover aff cluster, discover cluster, add cluster, active iq, digital wallet, subscriptios, licenses, bluexp 
-summary: 'Vous pouvez gérer les clusters ONTAP exécutés sur les contrôleurs AFF/ FAS et ONTAP Select à partir de la console NetApp .  L"ajout de systèmes ONTAP sur site à la console NetApp vous permet de gérer tous vos actifs de stockage et de données à partir d"une seule interface.' 
+summary: 'Vous pouvez gérer les clusters ONTAP exécutés sur les contrôleurs AFF/ FAS et ONTAP Select à partir de la NetApp Console.  L"ajout de systèmes ONTAP sur site à la NetApp Console vous permet de gérer tous vos actifs de stockage et de données à partir d"une seule interface.' 
 ---
-= En savoir plus sur la gestion des clusters ONTAP sur site dans la console NetApp
+= En savoir plus sur la gestion des clusters ONTAP sur site dans la NetApp Console
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,17 +14,17 @@ summary: 'Vous pouvez gérer les clusters ONTAP exécutés sur les contrôleurs 
 
 
 [role="lead"]
-Vous pouvez gérer les clusters ONTAP exécutés sur les contrôleurs AFF/ FAS et ONTAP Select à partir de la console NetApp .  L'ajout de systèmes ONTAP sur site à la console vous permet de gérer de manière centralisée tous vos actifs de stockage et de données.
+Vous pouvez gérer les clusters ONTAP exécutés sur les contrôleurs AFF/ FAS et ONTAP Select à partir de la NetApp Console.  L'ajout de systèmes ONTAP sur site à la console vous permet de gérer de manière centralisée tous vos actifs de stockage et de données.
 
 
 
-== Console NetApp
+== NetApp Console
 
-La console NetApp fournit une gestion centralisée des services de stockage et de données NetApp dans les environnements sur site et cloud à l'échelle de l'entreprise. La console est requise pour accéder aux services de données NetApp et les utiliser. En tant qu'interface de gestion, il vous permet de gérer de nombreuses ressources de stockage à partir d'une seule interface. Les administrateurs de console peuvent contrôler l’accès au stockage et aux services pour tous les systèmes de l’entreprise.
+La NetApp Console fournit une gestion centralisée des services de stockage et de données NetApp dans les environnements sur site et cloud à l'échelle de l'entreprise. La console est requise pour accéder aux services de données NetApp et les utiliser. En tant qu'interface de gestion, il vous permet de gérer de nombreuses ressources de stockage à partir d'une seule interface. Les administrateurs de console peuvent contrôler l’accès au stockage et aux services pour tous les systèmes de l’entreprise.
 
 Vous n'avez pas besoin de licence ni d'abonnement pour commencer à utiliser NetApp Console et vous n'encourez des frais que lorsque vous devez déployer des agents de console dans votre cloud pour garantir la connectivité à vos systèmes de stockage ou à vos services de données NetApp . Cependant, certains services de données NetApp accessibles depuis la console sont sous licence ou basés sur un abonnement.
 
-En savoir plus sur le https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["Console NetApp"] .
+En savoir plus sur le https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["NetApp Console"] .
 
 
 
