@@ -1,0 +1,68 @@
+---
+sidebar: sidebar 
+permalink: reference-limitations.html 
+keywords: limitations, system manager, unsupported features, on-premises ONTAP in NetApp Console 
+summary: 'Les limitations connues identifient les plates-formes, les appareils ou les fonctions qui ne sont pas pris en charge par cette version du produit ou qui n"interagissent pas correctement avec elle. Examinez attentivement ces limitations.' 
+---
+= Limitations connues de la gestion des clusters ONTAP sur site dans la console NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Les limitations connues identifient les plates-formes, les appareils ou les fonctions qui ne sont pas pris en charge par cette version du produit ou qui n'interagissent pas correctement avec elle. Examinez attentivement ces limitations.
+
+
+
+== Limitations liées aux systèmes ASA r2
+
+Après avoir découvert un système NetApp ASA r2, vous êtes dirigé vers le Gestionnaire système.
+
+Aucune autre option de gestion n'est disponible avec les systèmes ASA r2.  Vous ne pouvez pas utiliser la vue standard et vous ne pouvez pas activer les services de données NetApp .
+
+https://docs.netapp.com/us-en/asa-r2/index.html["En savoir plus sur les systèmes ASA r2"^]
+
+
+
+== Clusters non pris en charge
+
+Les clusters ONTAP sur site configurés avec l’authentification SAML ne sont pas pris en charge avec la console.
+
+
+
+== Limitations du gestionnaire de système
+
+Les fonctionnalités suivantes du Gestionnaire système ne sont pas prises en charge à partir de la console :
+
+* Configuration du cluster
++
+Après avoir défini l’adresse IP de gestion et configuré le mot de passe administrateur sur un cluster ONTAP local, vous pouvez découvrir le cluster dans la console.
+
+* Contrôle d'accès basé sur les rôles (agent de console uniquement)
++
+Le contrôle d’accès basé sur les rôles du Gestionnaire système n’est pas pris en charge lors de la découverte et de la gestion d’un cluster ONTAP sur site à l’aide d’un agent de console.  Vous êtes invité à saisir vos informations d’identification d’administrateur pendant le processus de découverte.  Ces informations d’identification sont utilisées pour toutes les actions effectuées à partir du Gestionnaire système.
+
++
+Avec l'option de découverte directe, vous êtes invité à vous connecter avec vos informations d'identification ONTAP chaque fois que vous ouvrez le système dans la console.
+
+* Activation de NetApp Backup and Recovery
++
+La version du cluster doit être 9.13.1 pour activer la sauvegarde et la récupération à partir du Gestionnaire système.
+
++
+Si vous n'avez pas découvert de cluster à l'aide d'un agent de console, vous ne pouvez pas utiliser le Gestionnaire système (vue avancée) pour activer la sauvegarde et la récupération.  Cependant, vous pouvez activer la sauvegarde et la récupération sur un cluster local directement depuis la console. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["Apprenez comment démarrer"^]
+
+* Mises à niveau à la demande
++
+Les mises à niveau à la demande du micrologiciel et du logiciel ne sont pas disponibles si la version du cluster est ONTAP 9.9.1 ou une version antérieure.
+
++
+Si vous ne disposez pas d'un agent de console, vous ne pouvez pas effectuer de mises à jour à partir de votre machine locale, mais uniquement à partir d'un serveur accessible via la console.
+
+* Recherche globale
+* Paramètres de l'interface utilisateur
+

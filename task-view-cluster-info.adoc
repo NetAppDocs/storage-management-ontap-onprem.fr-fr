@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: task-view-cluster-info.html 
+keywords: software contract, hardware contract, contracts, expiration date, expired, software contract 
+summary: 'Le portefeuille numérique vous permet de visualiser les détails du contrat pour chacun de vos clusters ONTAP sur site.  Si vous n"avez pas encore découvert de cluster, vous pouvez également le faire à partir du portefeuille numérique.' 
+---
+= Afficher les informations du cluster et les détails du contrat
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous pouvez afficher les détails du contrat pour chacun de vos clusters ONTAP sur site dans la console NetApp . Si vous n'avez pas encore découvert de cluster, vous pouvez également le faire à partir de la page *Abonnements et licences*.
+
+.Rôle de console requis :
+Administrateur de stockage ou visualiseur de stockage.link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["En savoir plus sur les rôles d’accès à la console NetApp ."^]
+
+https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-on-prem-clusters.html["En savoir plus sur la gestion des licences pour les clusters ONTAP sur site depuis la console"^]

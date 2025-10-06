@@ -1,0 +1,205 @@
+---
+sidebar: sidebar 
+permalink: task-manage-ontap-connector.html 
+keywords: system manager, advanced view, access system manager, load system manager, use system manager, flexgroup, flexgroup volumes, create flexgroup volume 
+summary: Si vous avez découvert un cluster ONTAP sur site à l’aide d’un agent de console, vous pouvez créer des volumes à partir de la vue Standard, utiliser le Gestionnaire système à partir de la vue Avancé et activer les services de données NetApp . 
+---
+= Gérer les clusters découverts avec un agent de console
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Si vous avez découvert un cluster ONTAP sur site à l'aide d'un agent de console, vous pouvez créer des volumes directement à partir de la console NetApp , accéder à ONTAP System Manager (directement à partir de la console) pour une gestion avancée et activer les services de données NetApp .
+
+.Rôle de console NetApp requis :
+Administrateur de stockage ou spécialiste de la santé du système.link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["En savoir plus sur les rôles d’accès à la console."^]
+
+Sur la page *Systèmes*, l'icône système d'un cluster que vous avez découvert avec un agent de console ressemble à ce qui suit :
+
+image:screenshot-connector-we.png["Capture d’écran de l’icône système qui apparaît lorsqu’un cluster est découvert avec un agent de console."]
+
+Si vous découvrez un système directement, l'icône du système affiche le mot « Direct ».
+
+
+
+== Créer des volumes FlexVol à partir de la console NetApp
+
+Après avoir ajouté votre cluster ONTAP local à la console à l’aide d’un agent de console, vous pouvez provisionner et gérer les volumes FlexVol directement à partir de la console.
+
+La console vous permet de créer des volumes NFS ou CIFS sur des agrégats existants.  Vous ne pouvez pas créer de nouveaux agrégats sur un cluster ONTAP local à partir des pages de la console native ; toutefois, vous pouvez accéder au gestionnaire système ONTAP correspondant à partir de la console pour créer des agrégats.
+
+.Étapes
+. Dans le menu de navigation, sélectionnez *Stockage > Gestion*.
+. Sur la page *Systèmes*, sélectionnez le cluster ONTAP local sur lequel vous souhaitez provisionner des volumes.
+. Sélectionnez *Volumes > Ajouter un volume*.
+. Suivez les étapes de l’assistant pour créer le volume.
++
+.. *Détails, protection et balises* : saisissez les détails du volume, comme son nom et sa taille, et choisissez une politique d'instantané.
++
+Certains champs de cette page sont explicites.  La liste suivante décrit les domaines pour lesquels vous pourriez avoir besoin de conseils :
+
++
+[cols="2,6"]
+|===
+| Champ | Description 
+
+
+| Taille | La taille maximale dépend de l'activation ou non du provisionnement dynamique, ce qui vous permet de créer un volume plus grand que le stockage physique disponible. 
+
+
+| Politique d'instantané | Une stratégie de copie Snapshot définit la fréquence et le nombre de copies Snapshot NetApp créées.  Une copie NetApp Snapshot est une image de système de fichiers à un instant T qui n'a aucun impact sur les performances et nécessite un stockage minimal.  Vous pouvez choisir la politique par défaut ou aucune.  Vous pouvez choisir « aucun » pour les données transitoires, telles que la base de données temporaire (tempdb) pour Microsoft SQL Server. 
+|===
+.. *Protocole* : Choisissez le protocole du volume (NFS, CIFS ou iSCSI), puis définissez le contrôle d'accès ou les autorisations pour le volume.
++
+Si vous choisissez CIFS sans serveur, le système vous invite à en configurer un à l’aide d’Active Directory ou d’un groupe de travail.
+
++
+La liste suivante décrit les domaines pour lesquels vous pourriez avoir besoin de conseils :
+
++
+[cols="2,6"]
+|===
+| Champ | Description 
+
+
+| Contrôle d'accès | Une politique d’exportation NFS définit les clients du sous-réseau qui peuvent accéder au volume.  Par défaut, la console entre une valeur qui donne accès à toutes les instances du sous-réseau. 
+
+
+| Autorisations et utilisateurs/groupes | Ces champs vous permettent de contrôler le niveau d'accès à un partage SMB pour les utilisateurs et les groupes (également appelés listes de contrôle d'accès ou ACL).  Vous pouvez spécifier des utilisateurs ou des groupes Windows locaux ou de domaine, ou des utilisateurs ou des groupes UNIX.  Si vous spécifiez un nom d’utilisateur Windows de domaine, vous devez inclure le domaine de l’utilisateur en utilisant le format domaine\nom d’utilisateur. 
+|===
+.. *Profil d'utilisation* : choisissez d'activer ou de désactiver les fonctionnalités d'efficacité de stockage sur le volume afin de réduire la quantité totale de stockage dont vous avez besoin.
+.. *Révision* : Vérifiez les détails du volume, puis sélectionnez *Ajouter*.
+
+
+
+
+
+
+== Créer des volumes FlexGroup avec l'API de la console NetApp
+
+Vous pouvez utiliser l’API de la console NetApp pour créer des volumes FlexGroup .  Un volume FlexGroup est un volume évolutif qui offre des performances élevées ainsi qu'une répartition automatique de la charge.
+
+* https://docs.netapp.com/us-en/bluexp-automation/cm/wf_onprem_flexgroup_ontap_create_vol.html["Découvrez comment créer un volume FlexGroup à l'aide de l'API"^]
+* https://docs.netapp.com/us-en/ontap/flexgroup/definition-concept.html["Découvrez ce qu'est un volume FlexGroup"^]
+
+
+
+
+== Accéder à ONTAP System Manager depuis la console NetApp
+
+Vous pouvez accéder à l’interface ONTAP System Manager directement dans la console.
+
+
+
+=== Caractéristiques
+
+Lorsque vous accédez à ONTAP System Manager depuis la console, vous avez accès à des fonctionnalités de gestion supplémentaires :
+
+* Gestion avancée du stockage
++
+Gérez les groupes de cohérence, les partages, les qtrees, les quotas et les machines virtuelles de stockage.
+
+* Gestion du réseau
++
+Gérez les espaces IP, les interfaces réseau, les ensembles de ports et les ports Ethernet.
+
+* Événements et emplois
++
+Afficher les journaux d’événements, les alertes système, les tâches et les journaux d’audit.
+
+* Protection avancée des données
++
+Protégez les machines virtuelles de stockage, les LUN et les groupes de cohérence.
+
+* Gestion de l'hôte
++
+Configurer des groupes d’initiateurs SAN et des clients NFS.
+
+
+
+
+
+=== Configurations prises en charge
+
+La gestion avancée via System Manager est prise en charge avec les clusters ONTAP sur site exécutant 9.10.0 ou une version ultérieure.
+
+L'intégration de System Manager n'est pas prise en charge dans les régions GovCloud ou dans les régions qui n'ont pas d'accès Internet sortant.
+
+
+
+=== Limites
+
+Certaines fonctionnalités de System Manager ne sont pas prises en charge avec les clusters ONTAP sur site lors de l'accès à ONTAP System Manager via la console.
+
+link:reference-limitations.html["Consultez la liste des limitations"] .
+
+
+
+=== Accéder à ONTAP System Manager depuis la console NetApp
+
+Ouvrez le gestionnaire système du système.
+
+.Étapes
+. Sur la page *Systèmes*, sélectionnez le cluster ONTAP local sur lequel vous souhaitez provisionner des volumes.
+. Dans le panneau de droite, sous *Services*, recherchez *Gestionnaire système* et sélectionnez *Ouvrir*.
+. Si vous voyez le message de confirmation, lisez-le et sélectionnez *Fermer*.
+. Utilisez System Manager pour gérer ONTAP.
+. Si nécessaire, sélectionnez *Passer à la vue standard* pour revenir à la gestion standard via la console.
++
+image:screenshot-standard-view.png["Capture d’écran d’un système ONTAP sur site qui affiche l’option Passer à la vue standard."]
+
+
+
+
+
+=== Obtenez de l'aide avec le Gestionnaire système
+
+Si vous avez besoin d'aide pour utiliser System Manager avec ONTAP, vous pouvez vous référer à https://docs.netapp.com/us-en/ontap/index.html["Documentation ONTAP"^] pour des instructions étape par étape.  Voici quelques liens qui pourraient vous aider :
+
+* https://docs.netapp.com/us-en/ontap/volume-admin-overview-concept.html["Gestion des volumes et des LUN"^]
+* https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html["Gestion de réseau"^]
+* https://docs.netapp.com/us-en/ontap/concept_dp_overview.html["Protection des données"^]
+
+
+
+
+== Activer les services de données NetApp
+
+Activez les services de données NetApp sur vos systèmes pour répliquer les données, sauvegarder les données, hiérarchiser les données, etc.
+
+Répliquer les données:: Répliquer les données entre les systèmes Cloud Volumes ONTAP , les systèmes de fichiers Amazon FSx for ONTAP et les clusters ONTAP .  Choisissez une réplication de données ponctuelle, qui peut vous aider à déplacer des données vers et depuis le cloud, ou une planification récurrente, qui peut faciliter la reprise après sinistre ou la conservation des données à long terme.
++
+--
+https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Documentation sur la réplication NetApp"^]
+
+--
+Sauvegarder les données:: Sauvegardez les données de votre système ONTAP sur site vers un stockage d'objets à faible coût dans le cloud.
++
+--
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["Documentation sur la sauvegarde et la restauration NetApp"^]
+
+--
+Numérisez, cartographiez et classez vos données:: Analysez vos clusters d’entreprise sur site pour cartographier et classer les données et identifier les informations privées.  Cela peut vous aider à réduire vos risques de sécurité et de conformité, à diminuer vos coûts de stockage et à vous aider dans vos projets de migration de données.
++
+--
+https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Documentation sur la classification des données NetApp"^]
+
+--
+Transférer les données vers le cloud:: Étendez votre centre de données au cloud en hiérarchisant automatiquement les données inactives des clusters ONTAP vers le stockage d’objets.
++
+--
+https://docs.netapp.com/us-en/bluexp-tiering/concept-cloud-tiering.html["Documentation sur la hiérarchisation du cloud NetApp"^]
+
+--
+Identifier les clusters à faible capacité:: Identifiez les clusters à faible capacité et examinez leur capacité actuelle et prévue.
++
+--
+https://docs.netapp.com/us-en/bluexp-economic-efficiency/index.html["Documentation sur la planification du cycle de vie de NetApp"^]
+
+--
+

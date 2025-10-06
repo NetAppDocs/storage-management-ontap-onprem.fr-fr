@@ -1,0 +1,9 @@
+= Les modèles de volume ne sont plus pris en charge
+:allow-uri-read: 
+
+
+
+
+=== Les modèles de volume ne sont plus pris en charge
+
+Vous ne pouvez plus créer un volume à partir d'un modèle.  Cette action était associée au service de correction BlueXP , qui n'est plus disponible.

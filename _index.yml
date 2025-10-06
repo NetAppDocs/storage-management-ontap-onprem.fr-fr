@@ -1,0 +1,31 @@
+---
+indexpage:
+  title: Gestion des clusters ONTAP sur site à l'aide de la console NetApp
+  summary: Gérez vos systèmes NetApp AFF et FAS à partir de la console NetApp pour
+    provisionner le stockage, répliquer les données et configurer des services de
+    données critiques basés sur le cloud.
+  keywords: bluexp, netapp console, ontap, discover onprem
+  lead: Gérez vos systèmes NetApp AFF et FAS à partir de la console NetApp pour provisionner
+    le stockage, répliquer les données et configurer des services de données critiques
+    basés sur le cloud.
+  tiles:
+  - title: Commencer
+    links:
+    - title: En savoir plus sur la gestion des clusters ONTAP sur site
+      url: concept-onprem-ontap.html
+    - title: Découvrez les clusters ONTAP
+      url: task-discovering-ontap.html
+  - title: Gérer les clusters ONTAP sur site dans la console NetApp
+    links:
+    - title: Gérer les clusters découverts directement
+      url: task-manage-ontap-direct.html
+    - title: Gérer les clusters découverts avec un agent de console
+      url: task-manage-ontap-connector.html
+  - title: Blogs et communauté
+    links:
+    - title: Console NetApp
+      url: https://www.netapp.com/console
+    - title: Services de données NetApp
+      url: https://www.netapp.com/data-services/
+    - title: Communauté NetApp
+      url: https://community.netapp.com/

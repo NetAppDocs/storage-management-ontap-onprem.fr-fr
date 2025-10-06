@@ -1,0 +1,17 @@
+= Prise en charge des systèmes ASA r2
+:allow-uri-read: 
+
+
+
+
+=== Prise en charge des systèmes ASA r2
+
+Vous pouvez désormais découvrir les systèmes NetApp ASA r2 dans BlueXP lorsque vous utilisez BlueXP en mode standard ou en mode restreint.  Après avoir découvert un système NetApp ASA r2 et ouvert l'environnement de travail, vous êtes directement redirigé vers le Gestionnaire système.
+
+Aucune autre option de gestion n'est disponible avec les systèmes ASA r2.  Vous ne pouvez pas utiliser la vue standard et vous ne pouvez pas activer les services BlueXP .
+
+La découverte des systèmes ASA r2 n'est pas prise en charge lors de l'utilisation de BlueXP en mode privé.
+
+* https://docs.netapp.com/us-en/asa-r2/index.html["En savoir plus sur les systèmes ASA r2"^]
+* https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["En savoir plus sur les modes de déploiement de BlueXP"^]
+

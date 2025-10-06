@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: task-manage-ontap-direct.html 
+keywords: direct discovery, direct, system manager, local, local discovery, 
+summary: Si vous avez découvert votre cluster ONTAP sur site directement sans utiliser d’agent de console NetApp , vous pouvez ouvrir le système dans la console NetApp pour gérer le cluster à l’aide d’ ONTAP System Manager. 
+---
+= Gérer les clusters découverts directement dans la console NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Si vous avez découvert votre cluster ONTAP sur site directement sans utiliser d’agent de console, vous pouvez ouvrir le système dans la console pour gérer le cluster et accéder à ONTAP System Manager.
+
+.Rôle de console requis :
+Administrateur de stockage ou spécialiste de la santé du système.link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["En savoir plus sur les rôles d’accès à la console."^]
+
+.Avant de commencer
+L'ordinateur que vous utilisez pour accéder à la console doit disposer d'une connexion réseau au cluster ONTAP local, de la même manière que vous fourniriez des connexions à d'autres ressources de votre réseau privé.
+
+.Limites
+Certaines fonctionnalités du Gestionnaire système ne sont pas prises en charge depuis la console.
+
+link:reference-limitations.html["Consultez la liste des limitations"] .
+
+.Étapes
+. Sur la page *Systèmes*, sélectionnez le système ONTAP sur site.
++
+L'icône système identifie les clusters qui ont été découverts directement :
+
++
+image:screenshot-direct-discovery-we.png["Une capture d'écran de l'icône système qui apparaît sur la page Système"]
+
+. Si vous y êtes invité, saisissez vos informations d’identification ONTAP .
++
+Le système vous invite à vous connecter avec vos informations d'identification ONTAP à chaque fois que vous l'ouvrez, sauf si vous enregistrez les informations d'identification. Vous pouvez les enregistrer pour ne pas avoir à les saisir à chaque fois. Vous pouvez gérer ces identifiants sur la page « Identifiants utilisateur ».  Dans certains cas, votre administrateur de console (avec le rôle d’administrateur d’organisation) peut avoir désactivé cette option et vous demander de saisir vos informations d’identification à chaque fois.
+
++
+image:screenshot-credentials.png["Une capture d’écran qui montre l’invite pour saisir le nom d’utilisateur et le mot de passe pour un cluster ONTAP ."]
+
+. Utilisez System Manager pour gérer ONTAP.
++
+Si vous avez besoin d'aide pour utiliser System Manager avec ONTAP, vous pouvez vous référer à https://docs.netapp.com/us-en/ontap/index.html["Documentation ONTAP"^] pour des instructions étape par étape.  Les liens suivants fournissent des conseils supplémentaires :
+
++
+** https://docs.netapp.com/us-en/ontap/volume-admin-overview-concept.html["Gestion des volumes et des LUN"^]
+** https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html["Gestion de réseau"^]
+** https://docs.netapp.com/us-en/ontap/concept_dp_overview.html["Protection des données"^]
+
+
+
