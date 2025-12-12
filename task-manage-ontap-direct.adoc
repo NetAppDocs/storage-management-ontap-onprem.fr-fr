@@ -30,11 +30,12 @@ link:reference-limitations.html["Consultez la liste des limitations"] .
 .Étapes
 . Sur la page *Systèmes*, sélectionnez le système ONTAP sur site.
 +
-L'icône système identifie les clusters qui ont été découverts directement :
+Le terme « direct » désigne les groupes qui ont été découverts directement :
 
 +
 image:screenshot-direct-discovery-we.png["Une capture d'écran de l'icône système qui apparaît sur la page Système"]
 
+. Sur la page *Détails du système*, sélectionnez *Saisir le système*.
 . Si vous y êtes invité, saisissez vos informations d’identification ONTAP .
 +
 Le système vous invite à vous connecter avec vos informations d'identification ONTAP à chaque fois que vous l'ouvrez, sauf si vous enregistrez les informations d'identification. Vous pouvez les enregistrer pour ne pas avoir à les saisir à chaque fois. Vous pouvez gérer ces identifiants sur la page « Identifiants utilisateur ».  Dans certains cas, votre administrateur de console (avec le rôle d’administrateur d’organisation) peut avoir désactivé cette option et vous demander de saisir vos informations d’identification à chaque fois.

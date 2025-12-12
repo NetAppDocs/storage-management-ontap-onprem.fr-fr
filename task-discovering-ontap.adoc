@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-discovering-ontap.html 
-keywords: ontap, cluster, discover, manage, discovering, fas, aff, discover onprem, discover aff cluster, discover cluster, add cluster, active iq, roles, dubscriptions, licenses, digital advisor 
+keywords: ontap, cluster, discover, manage, discovering, fas, aff, discover onprem, discover aff cluster, discover cluster, add cluster, active iq, roles, subscriptions, licenses, digital advisor 
 summary: 'Découvrez les clusters ONTAP sur site à partir de la NetApp Console afin de pouvoir commencer à gérer les volumes et à effectuer une gestion avancée à l"aide d" ONTAP System Manager, disponible à partir de la console.' 
 ---
 = Découvrez les clusters ONTAP sur site dans la NetApp Console
@@ -25,7 +25,7 @@ Administrateur de stockage ou spécialiste de la santé du système.link:https:/
 
 Vous pouvez ajouter des clusters ONTAP locaux à la console de deux manières.  La méthode à choisir dépend du fait que vous ayez ou non un agent de console installé dans votre organisation :
 
-Découverte et gestion à l'aide d'un agent de console:: Cette option vous permet de gérer les clusters exécutant ONTAP 8.3 et versions ultérieures à l'aide des fonctionnalités suivantes :
+Découverte et gestion à l'aide d'un agent de console:: Cette option vous permet de gérer les clusters exécutant ONTAP en utilisant les fonctionnalités suivantes :
 +
 --
 * Fournit des opérations de volume de base de manière native via la NetApp Console
@@ -135,7 +135,7 @@ Si vous sélectionnez cette option, vous n’aurez pas besoin de ressaisir les i
 
 . Sélectionnez *Découvrir*.
 +
-Si vous n’avez pas d’agent de console et que l’adresse IP n’est pas accessible depuis la console, vous serez invité à créer un agent de console.  Contactez votre administrateur de console pour créer un agent de console si vous n’en avez pas.
+Si vous ne disposez pas d'un agent de console et que l'adresse IP n'est pas accessible depuis la console, vous serez invité à créer un agent de console. Contactez votre administrateur de console pour créer un agent de console si vous n’en avez pas.
 
 
 

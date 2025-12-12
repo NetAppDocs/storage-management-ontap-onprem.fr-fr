@@ -18,6 +18,12 @@ Découvrez les nouveautés de la gestion des clusters ONTAP sur site dans la Net
 
 
 
+== 8 décembre 2025
+
+Directive non résolue dans <stdin> - include::_whatsnew/2025-12-08.adoc[]
+
+
+
 == 06 octobre 2025
 
 

@@ -1,0 +1,19 @@
+= Améliorations de l'ergonomie lors de la visualisation des systèmes ONTAP depuis la NetApp Console (mode standard uniquement)
+:allow-uri-read: 
+
+
+
+
+=== Améliorations de l'ergonomie lors de la visualisation des systèmes ONTAP depuis la NetApp Console (mode standard uniquement)
+
+La page *Systèmes* de la NetApp Console a été améliorée pour une meilleure clarté et une utilisation plus conviviale lors de la gestion des volumes et des clusters.  Ces mises à jour permettent d'harmoniser davantage l'expérience avec System Manager pour les versions ONTAP plus récentes et simplifient la navigation.
+
+.Capacité de cluster incluse pour les versions ONTAP 9.5 et supérieures (mode standard Console uniquement)
+La page *Systèmes > Vue d'ensemble* affiche la taille du cluster ainsi que la version ONTAP pour les clusters exécutant ONTAP 9.5 et versions ultérieures.
+
+Pour NetApp Console en mode restreint ou les versions ONTAP 9.5 et inférieures, les informations de provisionnement du volume restent inchangées.
+
+.L'onglet Volumes de la page Systèmes affiche par défaut l'affichage en grille si vous avez plus de 20 clusters ONTAP locaux.
+Lorsque vous gérez plus de 20 clusters ONTAP sur site dans la NetApp Console, l'onglet *Volume* passe par défaut en mode grille pour une navigation plus facile.  L'affichage par carte est désactivé.
+
+Cette modification s'applique uniquement au mode standard et aux versions ONTAP 9.6 et supérieures.
