@@ -18,12 +18,14 @@ Vous pouvez consulter les informations de capacité ainsi que les informations d
 
 
 
+[[view-capacity-information]]
 == Consulter les informations sur la capacité
 
 Lorsque vous sélectionnez un cluster ONTAP local à partir de la page *Systèmes*, la page *Détails du système* affiche les informations de capacité du cluster, notamment la capacité totale, la capacité utilisée et la capacité disponible.
 
 
 
+[[view-license-and-contract-details]]
 == Consultez les détails de la licence et du contrat
 
 Vous pouvez consulter les détails du contrat pour chacun de vos clusters ONTAP sur site depuis la page *Abonnements et licences*.

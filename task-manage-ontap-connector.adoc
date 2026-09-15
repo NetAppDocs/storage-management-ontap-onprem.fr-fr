@@ -27,6 +27,7 @@ Si vous découvrez un système directement, l'icône du système affiche le mot 
 
 
 
+[[create-flexvol-volumes-from-the-netapp-console]]
 == Créer des volumes FlexVol à partir de la NetApp Console
 
 Après avoir ajouté votre cluster ONTAP local à la console à l’aide d’un agent de console, vous pouvez provisionner et gérer les volumes FlexVol directement à partir de la console.
@@ -80,6 +81,7 @@ La liste suivante décrit les domaines pour lesquels vous pourriez avoir besoin 
 
 
 
+[[create-flexgroup-volumes-with-the-netapp-console-api]]
 == Créer des volumes FlexGroup avec l'API de la NetApp Console
 
 Vous pouvez utiliser l’API de la NetApp Console pour créer des volumes FlexGroup .  Un volume FlexGroup est un volume évolutif qui offre des performances élevées ainsi qu'une répartition automatique de la charge.
@@ -90,12 +92,14 @@ Vous pouvez utiliser l’API de la NetApp Console pour créer des volumes FlexGr
 
 
 
+[[access-ontap-system-manager-from-netapp-console]]
 == Accéder à ONTAP System Manager depuis la NetApp Console
 
 Vous pouvez accéder à l’interface ONTAP System Manager directement dans la console.
 
 
 
+[[features]]
 === Caractéristiques
 
 Lorsque vous accédez à ONTAP System Manager depuis la console, vous avez accès à des fonctionnalités de gestion supplémentaires :
@@ -124,6 +128,7 @@ Configurer des groupes d’initiateurs SAN et des clients NFS.
 
 
 
+[[supported-configurations]]
 === Configurations prises en charge
 
 La gestion avancée via System Manager est prise en charge avec les clusters ONTAP sur site exécutant 9.10.0 ou une version ultérieure.
@@ -132,6 +137,7 @@ L'intégration de System Manager n'est pas prise en charge dans les régions Gov
 
 
 
+[[limitations]]
 === Limites
 
 Certaines fonctionnalités de System Manager ne sont pas prises en charge avec les clusters ONTAP sur site lors de l'accès à ONTAP System Manager via la console.
@@ -140,6 +146,7 @@ link:reference-limitations.html["Consultez la liste des limitations"] .
 
 
 
+[[access-ontap-system-manager-from-netapp-console]]
 === Accéder à ONTAP System Manager depuis la NetApp Console
 
 Ouvrez le gestionnaire système du système.
@@ -154,6 +161,7 @@ Ouvrez le gestionnaire système du système.
 
 
 
+[[get-help-with-system-manager]]
 === Obtenez de l'aide avec le Gestionnaire système
 
 Si vous avez besoin d'aide pour utiliser System Manager avec ONTAP, vous pouvez vous référer à https://docs.netapp.com/us-en/ontap/index.html["Documentation ONTAP"^] pour des instructions étape par étape.  Voici quelques liens qui pourraient vous aider :
@@ -165,6 +173,7 @@ Si vous avez besoin d'aide pour utiliser System Manager avec ONTAP, vous pouvez 
 
 
 
+[[enable-netapp-data-services]]
 == Activer les services de données NetApp
 
 Activez les services de données NetApp sur vos systèmes pour répliquer les données, sauvegarder les données, hiérarchiser les données, etc.

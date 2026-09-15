@@ -21,6 +21,7 @@ Administrateur de stockage ou spécialiste de la santé du système.link:https:/
 
 
 
+[[step-1-review-discovery-and-management-options]]
 == Étape 1 : Examiner les options de découverte et de gestion
 
 Vous pouvez ajouter des clusters ONTAP locaux à la console de deux manières.  La méthode à choisir dépend du fait que vous ayez ou non un agent de console installé dans votre organisation :
@@ -51,6 +52,7 @@ Si vous décidez d'ajouter un agent de console à votre NetApp Console, vous dev
 
 
 
+[[step-2-set-up-your-environment]]
 == Étape 2 : Configurez votre environnement
 
 Avant de découvrir vos clusters ONTAP sur site, assurez-vous d’avoir satisfait aux exigences suivantes.
@@ -103,6 +105,7 @@ Conditions requises pour la découverte directe::
 
 
 
+[[step-3-discover-a-cluster]]
 == Étape 3 : Découvrir un cluster
 
 Découvrez vos clusters ONTAP sur site à partir de la console de deux manières :

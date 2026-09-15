@@ -405,7 +405,6 @@
   <block id="e7e9f49f4584c68b9d97c578e73b7583" category="list-text">Dans le coin supérieur droit de la console, sélectionnez l’icône Aide, puis sélectionnez *Support*.</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">Recherchez le numéro de série de votre identifiant de compte sur la page d'inscription au support.</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">Une capture d'écran du menu Aide où Support est la première option répertoriée</block>
-  <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">Site d'inscription au support de NetApp</block>
   <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">Accéder à<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> et sélectionnez *Je ne suis pas un client NetApp enregistré*.</block>
   <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">Remplissez les champs obligatoires (ceux avec des astérisques rouges).</block>
@@ -428,7 +427,6 @@
   <block id="5bc1315a63455544e7a917a7cc968939" category="paragraph">Ces informations d’identification NSS sont associées à votre ID de compte de console spécifique. Les utilisateurs appartenant à l'organisation Console peuvent accéder à ces informations d'identification depuis *Support &gt; Gestion NSS*.</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">Si vous disposez d’un compte client, vous pouvez ajouter un ou plusieurs comptes NSS.</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">Si vous disposez d'un compte partenaire ou revendeur, vous pouvez ajouter un ou plusieurs comptes NSS, mais ils ne peuvent pas être ajoutés aux côtés des comptes de niveau client.</block>
-  <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">Sélectionnez *Gestion NSS &gt; Ajouter un compte NSS*.</block>
   <block id="85b9386ed443776127e099931d73448a" category="list-text">Lorsque vous y êtes invité, sélectionnez *Continuer* pour être redirigé vers une page de connexion Microsoft.</block>
   <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp utilise Microsoft Entra ID comme fournisseur d’identité pour les services d’authentification spécifiques au support et aux licences.</block>
@@ -440,8 +438,6 @@
   <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">Il en va de même si vous disposez de comptes NSS préexistants au niveau client et que vous essayez d’ajouter un compte au niveau partenaire.</block>
   <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">Une fois la connexion réussie, NetApp stockera le nom d'utilisateur NSS.</block>
   <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">Une icône de trois points horizontaux</block>
-  <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">Il s’agit d’un identifiant généré par le système qui correspond à votre e-mail. Sur la page *Gestion NSS*, vous pouvez afficher votre e-mail à partir du<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> menu.</block>
-  <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">Si vous avez besoin d'actualiser vos jetons d'identification de connexion, il existe également une option *Mettre à jour les informations d'identification* dans le<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> menu.</block>
   <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">L'utilisation de cette option vous invite à vous reconnecter. Notez que le jeton de ces comptes expire après 90 jours. Une notification sera publiée pour vous en informer.</block>
   <block id="4bbcdd6338e8631576e63f1156b1c51d" category="doc">Afficher les informations du cluster et les détails du contrat</block>
   <block id="f37fdd0902b8053298a78162a62ee3ca" category="inline-link">En savoir plus sur la gestion des licences pour les clusters ONTAP sur site depuis la console</block>
@@ -560,4 +556,8 @@
   <block id="2ddee4e80b9a154cfc971c7cf4848736" category="section-title">Consultez les détails de la licence et du contrat</block>
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">8 décembre 2025</block>
   <block id="426c031f387e762bb968fd54671cf5a6" category="paragraph">Directive non résolue dans &lt;stdin&gt; - include::_whatsnew/2025-12-08.adoc[]</block>
+  <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7019a39846e9a2c7f7a80eaba91e4a41" category="paragraph"><block ref="7019a39846e9a2c7f7a80eaba91e4a41" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1d593c3f7480ada9580d93cd753c3f93" category="paragraph">Il s'agit d'un identifiant généré par le système et associé à votre adresse e-mail. Sur la page *Gestion NSS*, vous pouvez consulter votre adresse e-mail depuis le <block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block> menu.</block>
+  <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">Si vous devez actualiser vos identifiant tokens de connexion, il existe également une option *Mettre à jour les identifiants* dans le menu <block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>.</block>
 </blocks>

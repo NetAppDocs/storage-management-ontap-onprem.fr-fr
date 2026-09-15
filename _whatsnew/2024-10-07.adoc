@@ -4,6 +4,7 @@
 
 
 
+[[support-for-asa-r2-systems]]
 === Prise en charge des systèmes ASA r2
 
 Vous pouvez désormais découvrir les systèmes NetApp ASA r2 dans BlueXP lorsque vous utilisez BlueXP en mode standard ou en mode restreint.  Après avoir découvert un système NetApp ASA r2 et ouvert l'environnement de travail, vous êtes directement redirigé vers le Gestionnaire système.

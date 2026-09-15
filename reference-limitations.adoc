@@ -18,6 +18,7 @@ Les limitations connues identifient les plates-formes, les appareils ou les fonc
 
 
 
+[[limitations-related-to-asa-r2-systems]]
 == Limitations liées aux systèmes ASA r2
 
 Après avoir découvert un système NetApp ASA r2, vous êtes dirigé vers le Gestionnaire système.
@@ -28,12 +29,14 @@ https://docs.netapp.com/us-en/asa-r2/index.html["En savoir plus sur les système
 
 
 
+[[unsupported-clusters]]
 == Clusters non pris en charge
 
 Les clusters ONTAP sur site configurés avec l’authentification SAML ne sont pas pris en charge avec la console.
 
 
 
+[[system-manager-limitations]]
 == Limitations du gestionnaire de système
 
 Les fonctionnalités suivantes du Gestionnaire système ne sont pas prises en charge à partir de la console :
